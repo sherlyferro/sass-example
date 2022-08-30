@@ -1,0 +1,22 @@
+{
+  "name": "sass-example",
+  "version": "1.0.0",
+  "description": "ejemplos de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherlyferro/sass-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sherlyferro/sass-example/issues"
+  },
+  "homepage": "https://github.com/sherlyferro/sass-example#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
