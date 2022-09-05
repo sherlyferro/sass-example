@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
+/* encabezado*/
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +9,17 @@
 }
 
 header {
-    overflow: hidden;
     background: linear-gradient(to right, #fff 30%, #55dbe5);
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 100%;
 
     .navbar navbar-expand-lg navbar-light bg-light-nav {
         background: linear-gradient(to right, #fff 30%, #55dbe5);
-        position: sticky;
 
         .container-fluid {
             background: linear-gradient(to right, #fff 30%, #55dbe5);
-            margin-left: auto;
-            margin-right: auto;
+
         }
     }
 }
@@ -30,10 +27,8 @@ header {
 .logo_index {
     width: 50px;
     height: 50px;
-}
+    margin-right: ;
 
-.nav-item:hover {
-    transform: scale(1.1);
 }
 
 /* menu index */
