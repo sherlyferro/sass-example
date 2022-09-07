@@ -74,29 +74,3 @@ $color in $redes {
 
 
 
-/*  queries footer*/
-@media only screen and (min-width: 320px) and (max-width: 520px){
-    footer {
-       
-        ul {
-            padding-left: 0px;
-            background-color: #FFF;
-            text-align: left;
-            width: 100%;
-    
-        }
-    
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            font-size: 60px;
-    
-            .green_watsapp {
-                cursor: pointer;
-                color: rgb(41, 114, 19);
-            }
-        }
-    }
-
-}

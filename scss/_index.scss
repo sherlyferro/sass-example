@@ -136,7 +136,6 @@
 /* queries index */
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
-   
     
     .content-container {
         background: radial-gradient(#fff 30%, #318f96);
@@ -146,7 +145,7 @@
         gap: 10px 10px;
         grid-auto-flow: row;
         grid-template-areas:
-        
+
             "one "
             "two "
             "three"
@@ -155,52 +154,77 @@
 
         .one {
             grid-area: one;
+
             .card {
-                    height: 100%;  
-                    .titulo_index{
+                width: 90%;
+                height: 160px;
+                margin-left: 10px;
+
+                .titulo_index {
                     font-size: 10px;
                 }
             }
         }
+
         .two {
-            grid-area: one;
+            grid-area: two;
+
             .card {
                 width: 90%;
                 margin-left: 10px;
-                height: 100%;
-                .titulo_index{
+                height: 160px;
+
+                .titulo_index {
                     font-size: 10px;
                 }
             }
         }
-        
+
 
         .three {
             grid-area: three;
+
             .card {
                 width: 90%;
                 margin-left: 10px;
+                height: 160px;
             }
         }
 
         .four {
             grid-area: four;
+
             .card {
                 width: 90%;
                 margin-left: 10px;
+                height: 160px;
             }
         }
 
         .five {
             grid-area: five;
+
             .card {
                 width: 90%;
                 margin-left: 10px;
+                height: 160px;
             }
-        
-    }
+
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes puff-in-center {
     0% {
@@ -215,15 +239,3 @@
         opacity: 1
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
