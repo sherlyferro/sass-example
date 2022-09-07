@@ -93,6 +93,7 @@ footer .whatsapp {
     border: 1px solid #58144f;
     transform: scale(1.1); }
 
+/* area grid*/
 .content-container {
   background: radial-gradient(#fff 30%, #318f96);
   display: grid;
@@ -112,7 +113,7 @@ footer .whatsapp {
   .content-container .five {
     grid-area: five; }
 
-/* fincarru cel */
+/* farjetas*/
 .card {
   background-color: #fafbfb;
   margin: 10px;
@@ -141,48 +142,74 @@ footer .whatsapp {
 
 /* queries index */
 @media only screen and (min-width: 320px) and (max-width: 520px) {
+  .slider_index {
+    height: 600px;
+    width: 100%; }
+  /* carrucel */
+  .carousel-caption .titulo_slider {
+    font-size: 35px;
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+  .carousel-caption .titulos_index {
+    font-size: 20px; }
+  .carousel-caption .descripcion_index {
+    font-size: 25px;
+    font-family: 1; }
+  .carousel-caption .button_index {
+    font-size: 19px;
+    margin-left: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .carousel-caption .button_index:hover {
+    background: radial-gradient(#f487e9, #a9f2f8);
+    transform: scale(1.1); }
   .content-container {
     background: radial-gradient(#fff 30%, #318f96);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 10px 10px;
+    gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas: "one " "two " "three" "four" "five"; }
     .content-container .one {
       grid-area: one; }
       .content-container .one .card {
         width: 90%;
-        height: 160px;
+        height: 150px;
         margin-left: 10px; }
-        .content-container .one .card .titulo_index {
-          font-size: 10px; }
+        .content-container .one .card .titulos_index {
+          font-size: 20px; }
     .content-container .two {
       grid-area: two; }
       .content-container .two .card {
         width: 90%;
         margin-left: 10px;
-        height: 160px; }
-        .content-container .two .card .titulo_index {
-          font-size: 10px; }
+        height: 150px; }
+        .content-container .two .card .titulos_index {
+          font-size: 20px; }
     .content-container .three {
       grid-area: three; }
       .content-container .three .card {
         width: 90%;
         margin-left: 10px;
-        height: 160px; }
+        height: 150px; }
+        .content-container .three .card .titulos_index {
+          font-size: 20px; }
     .content-container .four {
       grid-area: four; }
       .content-container .four .card {
         width: 90%;
         margin-left: 10px;
-        height: 160px; }
+        height: 150px; }
+        .content-container .four .card .titulos_index {
+          font-size: 20px; }
     .content-container .five {
       grid-area: five; }
       .content-container .five .card {
         width: 90%;
         margin-left: 10px;
-        height: 160px; } }
+        height: 150px; }
+        .content-container .five .card .titulos_index {
+          font-size: 20px; } }
 
 @keyframes puff-in-center {
   0% {

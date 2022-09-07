@@ -58,6 +58,7 @@
     }
 }
 
+/* area grid*/
 .content-container {
     background: radial-gradient(#fff 30%, #318f96);
     display: grid;
@@ -92,7 +93,7 @@
 
 
 
-/* fincarru cel */
+/* farjetas*/
 .card {
     background-color: #fafbfb;
     margin: 10px;
@@ -136,13 +137,50 @@
 /* queries index */
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
-    
+    .slider_index {
+        height: 600px;
+        width: 100%;
+
+    }
+
+    /* carrucel */
+    .carousel-caption {
+        .titulo_slider {
+            font-size: 35px;
+            animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+        }
+
+        .titulos_index {
+            font-size: 20px;
+
+        }
+
+        .descripcion_index {
+
+            font-size: 25px;
+            font-family: random($limit: 1);
+        }
+
+        .button_index {
+            font-size: 19px;
+            margin-left: 2px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .button_index:hover {
+
+            background: radial-gradient(#f487e9, #a9f2f8);
+            transform: scale(1.1);
+        }
+    }
+
     .content-container {
         background: radial-gradient(#fff 30%, #318f96);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        gap: 10px 10px;
+        gap: 5px 5px;
         grid-auto-flow: row;
         grid-template-areas:
 
@@ -157,11 +195,11 @@
 
             .card {
                 width: 90%;
-                height: 160px;
+                height: 150px;
                 margin-left: 10px;
 
-                .titulo_index {
-                    font-size: 10px;
+                .titulos_index {
+                    font-size: 20px;
                 }
             }
         }
@@ -172,10 +210,10 @@
             .card {
                 width: 90%;
                 margin-left: 10px;
-                height: 160px;
+                height: 150px;
 
-                .titulo_index {
-                    font-size: 10px;
+                .titulos_index {
+                    font-size: 20px;
                 }
             }
         }
@@ -187,7 +225,10 @@
             .card {
                 width: 90%;
                 margin-left: 10px;
-                height: 160px;
+                height: 150px;
+                .titulos_index {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -197,7 +238,10 @@
             .card {
                 width: 90%;
                 margin-left: 10px;
-                height: 160px;
+                height: 150px;
+                .titulos_index {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -207,7 +251,10 @@
             .card {
                 width: 90%;
                 margin-left: 10px;
-                height: 160px;
+                height: 150px;
+                .titulos_index {
+                    font-size: 20px;
+                }
             }
 
         }
