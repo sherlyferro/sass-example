@@ -197,7 +197,7 @@ ul.footer>li>a {
 }
 
 /* AREA DE NOSOTROS*/
-.navbar navbar-expand-lg navbar-light bg-light-nosotros {}
+
 
 .card-title-nosotros {
     font-size: 20px;
@@ -935,5 +935,3 @@ iframe {
 
 }
 
-
-@media only screen and (min-width: 521px) and (max-width: 1024px) {}

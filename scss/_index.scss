@@ -1,0 +1,229 @@
+/* main index */
+
+.slider_index {
+    height: 750px;
+    width: 100%;
+
+}
+
+/* carrucel */
+.carousel-caption {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+
+    .titulo_slider {
+        color: #a52a2a;
+        font-size: 40px;
+        animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+    }
+
+    .titulos_index {
+        font-size: 30px;
+        color: #a52a2a;
+    }
+
+    .descripcion_index {
+        color: #000;
+        font-size: 25px;
+        font-family: random($limit: 1);
+    }
+
+    .button_index {
+        cursor: pointer;
+        width: 250px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid rgb(19, 0, 15);
+        text-align: center;
+        font-size: 20px;
+        background: radial-gradient(rgb(211, 111, 184), rgb(198, 27, 47));
+        color: #fef7f9;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 30px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+    .button_index:hover {
+        color: rgb(1, 1, 15);
+        background: radial-gradient(#f487e9, #a9f2f8);
+        border: 1px solid rgb(88, 20, 79);
+        transform: scale(1.1);
+    }
+}
+
+.content-container {
+    background: radial-gradient(#fff 30%, #318f96);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "one two three"
+        "one four five";
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+
+    .five {
+        grid-area: five;
+    }
+}
+
+
+
+/* fincarru cel */
+.card {
+    background-color: #fafbfb;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 35px;
+
+    .img_card {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        padding: auto;
+    }
+
+    .titulos_index {
+        font-size: 30px;
+        color: #a52a2a;
+    }
+
+    .descripcion_index {
+        color: #000;
+        font-size: 15px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 1px solid rgb(35, 110, 117);
+
+}
+
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto ;
+}
+
+.card {
+    @include tamanos (400px, 150px);
+}
+
+/* queries index */
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+   
+    
+    .content-container {
+        background: radial-gradient(#fff 30%, #318f96);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        
+            "one "
+            "two "
+            "three"
+            "four"
+            "five";
+
+        .one {
+            grid-area: one;
+            .card {
+                    height: 100%;  
+                    .titulo_index{
+                    font-size: 10px;
+                }
+            }
+        }
+        .two {
+            grid-area: one;
+            .card {
+                width: 90%;
+                margin-left: 10px;
+                height: 100%;
+                .titulo_index{
+                    font-size: 10px;
+                }
+            }
+        }
+        
+
+        .three {
+            grid-area: three;
+            .card {
+                width: 90%;
+                margin-left: 10px;
+            }
+        }
+
+        .four {
+            grid-area: four;
+            .card {
+                width: 90%;
+                margin-left: 10px;
+            }
+        }
+
+        .five {
+            grid-area: five;
+            .card {
+                width: 90%;
+                margin-left: 10px;
+            }
+        
+    }
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        transform: scale(2);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
