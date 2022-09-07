@@ -1,0 +1,72 @@
+/* pie de pagina  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+footer {
+
+    ul {
+        padding-left: 0px;
+        background-color: #FFF;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 60px;
+
+        .green_watsapp {
+            cursor: pointer;
+            color: rgb(41, 114, 19);
+        }
+    }
+}
+
+.redes_footer_index {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(14, 1, 1);
+    text-decoration: none;
+    size: 20px;
+
+    a {
+        color: black;
+    }
+
+}
+
+.redes_footer_index:hover {
+    background-color: rgb(110, 207, 199);
+}
+
+
+$redes: (
+    fa-facebook :blue,
+    fa-tiktok :rgb(185, 15, 128),
+    fa-instragram: rgb(246, 142, 16)
+);
+
+
+@each $redsocial,
+$color in $redes {
+    .fa-brands-#{$redsocial} {
+        color: $color;
+
+    }
+}
+
+.fa-brands-fa-facebook {
+    width: 50px;
+    text-align: center;
+
+    &:hover {
+        color: #0a0500;
+        transform: scale(1.1);
+    }
+}
+
+.fa-brands-fa-instragram,.fa-brands-fa-tiktok {
+    @extend.fa-brands-fa-facebook;
+}

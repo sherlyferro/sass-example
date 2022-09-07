@@ -1,0 +1,69 @@
+.card {
+    background-color: #fafbfb;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    
+    .img_card {
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+    }
+
+    .titulos_index {
+        font-size: 30px;
+        color: #a52a2a;
+    }
+
+    .descripcion_index {
+        color: #000;
+        font-size: 15px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 1px solid rgb(35, 110, 117);
+
+}
+
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto ;
+}
+
+
+/* area grid de index */
+.content-container {
+    background: radial-gradient(#fff 30%, #318f96);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "one two three"
+        "one four five";
+
+    .one {
+        grid-area: one;
+
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+
+    .five {
+        grid-area: five;
+    }
+}
