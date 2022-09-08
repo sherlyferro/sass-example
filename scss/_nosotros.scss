@@ -1,0 +1,45 @@
+.row {
+    .imagen_nosotros {
+        height: 750px;
+        width: 100%;
+    }
+    .staff_nosotros{
+font-size: 40px;
+text-align: center;
+    }
+}
+/* boton de rserva cita*/
+.button_nosotros {
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(19, 0, 15);
+    text-align: center;
+    font-size: 20px;
+    background: radial-gradient(rgb(211, 111, 184), rgb(198, 27, 47));
+    color: #fef7f9;
+    font-family: 'Montserrat', sans-serif;
+   margin-top: 10px;
+}
+
+.button_nosotros:hover {
+    color: rgb(1, 1, 15);
+    background: radial-gradient(#f487e9, #a9f2f8);
+    border: 1px solid rgb(88, 20, 79);
+    transform: scale(1.1);
+}
+.card-nosotros{
+    background-color: #118f8f;
+    margin: 20px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-nosotros:hover {
+    transform: scale(1.1);
+    border: 1px solid rgb(35, 110, 117);
+
+}
