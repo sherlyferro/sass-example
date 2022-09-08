@@ -44,7 +44,7 @@
 
 /* farjetas*/
 .card {
-    background-color: #fafbfb;
+    background: radial-gradient(#fff 50%, #b6f9f7);
     margin: 20px;
     padding: 5px;
     width: 100%;
@@ -77,6 +77,8 @@
 .card:hover {
     transform: scale(1.1);
     border: 1px solid rgb(35, 110, 117);
+    
+  
 
 }
 
