@@ -294,7 +294,7 @@
     grid-area: blaqueamiento; }
   .container-pacientes .span1 {
     grid-area: span1;
-    background: linear-gradient(#fcfcff, #eed8e3);
+    background: linear-gradient(#fcfcff, #89f6f8);
     text-align: center;
     height: 380px; }
     .container-pacientes .span1 .img_pacientes {
@@ -302,7 +302,7 @@
       height: 300px; }
   .container-pacientes .span2 {
     grid-area: span2;
-    background: linear-gradient(#fcfcff, #eed8e3);
+    background: linear-gradient(#fcfcff, #89f6f8);
     text-align: center;
     height: 380px; }
     .container-pacientes .span2 .img_pacientes {
@@ -310,7 +310,7 @@
       height: 300px; }
   .container-pacientes .span3 {
     grid-area: span3;
-    background: linear-gradient(#fcfcff, #eed8e3);
+    background: linear-gradient(#fcfcff, #89f6f8);
     text-align: center;
     height: 380px; }
     .container-pacientes .span3 .img_pacientes {
@@ -318,7 +318,7 @@
       height: 300px; }
   .container-pacientes .span4 {
     grid-area: span4;
-    background: linear-gradient(#fcfcff, #eed8e3);
+    background: linear-gradient(#fcfcff, #89f6f8);
     text-align: center;
     height: 380px; }
     .container-pacientes .span4 .img_pacientes {
