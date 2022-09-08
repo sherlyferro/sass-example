@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 /* pie de pagina  */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+footer .footer {
+  background: linear-gradient(to right, #fff 30%, #55dbe5); }
+  footer .footer .redes_footer_index {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0e0101;
+    text-decoration: none;
+    background: radial-gradient(#76e2e1, #fff);
+    size: 20px; }
+    footer .footer .redes_footer_index a {
+      color: black; }
+
 footer ul {
   padding-left: 0px;
   background-color: #FFF;
@@ -16,18 +28,17 @@ footer .whatsapp {
     cursor: pointer;
     color: #297213; }
 
-.redes_footer_index {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #0e0101;
-  text-decoration: none;
-  size: 20px; }
-  .redes_footer_index a {
-    color: black; }
+/* area hover  */
+.whatsapp:hover {
+  transform: scale(1.5); }
+  .whatsapp:hover .green_watsapp {
+    cursor: pointer;
+    color: #ca2266; }
 
 .redes_footer_index:hover {
   background-color: #6ecfc7; }
 
+/* propiedad each */
 .fa-brands-fa-facebook, .fa-brands-fa-instragram,
 .fa-brands-fa-tiktok {
   color: blue; }
@@ -36,7 +47,7 @@ footer .whatsapp {
   color: #b90f80; }
 
 .fa-brands-fa-instragram {
-  color: #f68e10; }
+  color: #ac3d05; }
 
 .fa-brands-fa-facebook, .fa-brands-fa-instragram,
 .fa-brands-fa-tiktok {
@@ -53,27 +64,31 @@ footer .whatsapp {
   width: 100%; }
 
 /* carrucel */
-.carousel-caption {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px; }
-  .carousel-caption .titulo_slider {
-    color: #a52a2a;
-    font-size: 40px;
-    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
-  .carousel-caption .titulos_index {
-    font-size: 30px;
-    color: #a52a2a; }
-  .carousel-caption .descripcion_index {
-    color: #000;
-    font-size: 25px;
-    font-family: 1; }
-  .carousel-caption .button_index {
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  /* boton de rserva cita*/ }
+  .container-fluid .carousel-caption {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px; }
+    .container-fluid .carousel-caption .titulo_slider {
+      color: #a52a2a;
+      font-size: 40px;
+      animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+    .container-fluid .carousel-caption .titulos_index {
+      font-size: 30px;
+      color: #a52a2a; }
+    .container-fluid .carousel-caption .descripcion_index {
+      color: #000;
+      font-size: 25px;
+      font-family: 1; }
+  .container-fluid .button_index {
     cursor: pointer;
     width: 250px;
     height: 40px;
@@ -87,11 +102,42 @@ footer .whatsapp {
     margin-left: 30px;
     margin-bottom: 25px;
     margin-top: 10px; }
-  .carousel-caption .button_index:hover {
+  .container-fluid .button_index:hover {
     color: #01010f;
     background: radial-gradient(#f487e9, #a9f2f8);
     border: 1px solid #58144f;
     transform: scale(1.1); }
+
+/* farjetas*/
+.card {
+  background-color: #fafbfb;
+  margin: 20px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px; }
+  .card .img_card {
+    width: 90px;
+    height: 90px;
+    margin: 0px;
+    padding: auto; }
+  .card .titulos_index {
+    font-size: 25px;
+    color: #a52a2a;
+    text-align: center;
+    margin-top: 5px; }
+  .card .descripcion_index {
+    color: #000;
+    font-size: 15px; }
+
+.card:hover {
+  transform: scale(1.1);
+  border: 1px solid #236e75; }
+
+.card {
+  width: 90%;
+  height: 150px; }
 
 /* area grid*/
 .content-container {
@@ -99,7 +145,8 @@ footer .whatsapp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
+  gap: 5px 5px;
+  width: 100%;
   grid-auto-flow: row;
   grid-template-areas: "one two three" "one four five"; }
   .content-container .one {
@@ -112,33 +159,6 @@ footer .whatsapp {
     grid-area: four; }
   .content-container .five {
     grid-area: five; }
-
-/* farjetas*/
-.card {
-  background-color: #fafbfb;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  margin-left: 35px; }
-  .card .img_card {
-    width: 50px;
-    height: 50px;
-    margin: 0px;
-    padding: auto; }
-  .card .titulos_index {
-    font-size: 30px;
-    color: #a52a2a; }
-  .card .descripcion_index {
-    color: #000;
-    font-size: 15px; }
-
-.card:hover {
-  transform: scale(1.1);
-  border: 1px solid #236e75; }
-
-.card {
-  width: 400px;
-  height: 150px; }
 
 /* queries index */
 @media only screen and (min-width: 320px) and (max-width: 520px) {
@@ -162,6 +182,9 @@ footer .whatsapp {
   .carousel-caption .button_index:hover {
     background: radial-gradient(#f487e9, #a9f2f8);
     transform: scale(1.1); }
+  .nav-item:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #fff 30%, #318f96; }
   .content-container {
     background: radial-gradient(#fff 30%, #318f96);
     display: grid;
@@ -209,7 +232,12 @@ footer .whatsapp {
         margin-left: 10px;
         height: 150px; }
         .content-container .five .card .titulos_index {
-          font-size: 20px; } }
+          font-size: 20px; }
+  .whatsapp:hover {
+    transform: scale(1.1); }
+    .whatsapp:hover .green_watsapp {
+      cursor: pointer;
+      color: #ca2266; } }
 
 @keyframes puff-in-center {
   0% {
@@ -243,12 +271,17 @@ header {
       background: linear-gradient(to right, #fff 30%, #55dbe5);
       padding: 0; }
       header .navbar navbar-expand-lg navbar-light bg-light-nav .container-fluid .logo_index {
+        margin-top: 2px;
         width: 70px;
         height: 70px; }
 
 .logo_index {
   width: 70px;
   height: 70px; }
+
+.nav-item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
 
 .nav-item:hover {
   transform: scale(1.1);

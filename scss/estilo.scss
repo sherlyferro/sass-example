@@ -22,30 +22,39 @@ header {
     .navbar navbar-expand-lg navbar-light bg-light-nav {
         background: linear-gradient(to right, #fff 30%, #55dbe5);
         position: sticky;
-
+      
         .container-fluid {
             background: linear-gradient(to right, #fff 30%, #55dbe5);
-            padding: 0;            
-
+            padding: 0;
+            
             .logo_index {
+                margin-top: 2px;
                 width: 70px;
                 height: 70px;
             }
 
         }
+
+        
     }
+
 }
 
 .logo_index {
     width: 70px;
     height: 70px;
 }
-
+.nav-item{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+   
+}
 .nav-item:hover {
     transform: scale(1.1);
     border-bottom: 2px solid #55dbe5;
+    
 
 }
 
 /*  fin encabezado*/
-
