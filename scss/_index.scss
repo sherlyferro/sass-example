@@ -1,5 +1,5 @@
 /* main index */
-
+/*amcho de las imagener en carrucel */
 .slider_index {
     height: 750px;
     width: 100%;
@@ -7,37 +7,39 @@
 }
 
 /* carrucel */
-.container-fluid{
-padding-left: 0px;
-padding-right: 0px;
-.carousel-caption {
-    position: absolute;
-    bottom: 1.25rem;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 30px;
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 
-    .titulo_slider {
-        color: #a52a2a;
-        font-size: 40px;
-        animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+    .carousel-caption {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+
+        .titulo_slider {
+            color: #a52a2a;
+            font-size: 40px;
+            animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+        }
+
+        .titulos_index {
+            font-size: 30px;
+            color: #a52a2a;
+        }
+
+        .descripcion_index {
+            color: #000;
+            font-size: 25px;
+            font-family: random($limit: 1);
+        }
     }
 
-    .titulos_index {
-        font-size: 30px;
-        color: #a52a2a;
-    }
-
-    .descripcion_index {
-        color: #000;
-        font-size: 25px;
-        font-family: random($limit: 1);
-    }
-}
-/* boton de rserva cita*/
+    /* boton de rserva cita*/
     .button_index {
         cursor: pointer;
         width: 250px;
@@ -61,6 +63,7 @@ padding-right: 0px;
         transform: scale(1.1);
     }
 }
+
 /* farjetas*/
 .card {
     background-color: #fafbfb;
@@ -83,7 +86,7 @@ padding-right: 0px;
         color: #a52a2a;
         text-align: center;
         margin-top: 5px;
-        
+
     }
 
     .descripcion_index {
@@ -92,12 +95,14 @@ padding-right: 0px;
     }
 }
 
+/* hover */
 .card:hover {
     transform: scale(1.1);
     border: 1px solid rgb(35, 110, 117);
 
 }
 
+/* aplicando mixin */
 @mixin tamanos($ancho, $alto) {
     width: $ancho;
     height: $alto ;
@@ -122,28 +127,28 @@ padding-right: 0px;
 
     .one {
         grid-area: one;
-       
+
 
     }
 
     .two {
         grid-area: two;
-        
+
     }
 
     .three {
         grid-area: three;
-        
+
     }
 
     .four {
         grid-area: four;
-        
+
     }
 
     .five {
         grid-area: five;
-        
+
     }
 }
 
@@ -188,11 +193,14 @@ padding-right: 0px;
             transform: scale(1.1);
         }
     }
+
     .nav-item:hover {
         transform: scale(1.1);
         border-bottom: 2px solid (#fff 30%, #318f96);
-          
+
     }
+
+    /* grid para mobile */
     .content-container {
         background: radial-gradient(#fff 30%, #318f96);
         display: grid;
@@ -281,9 +289,10 @@ padding-right: 0px;
 
         }
     }
+
     .whatsapp:hover {
         transform: scale(1.1);
-        
+
         .green_watsapp {
             cursor: pointer;
             color: rgb(202, 34, 102);
@@ -291,16 +300,7 @@ padding-right: 0px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+/* palabras claves de la animacion */
 
 
 @keyframes puff-in-center {
