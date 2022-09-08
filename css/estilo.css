@@ -515,6 +515,22 @@
       width: 90%;
       height: 100%; } }
 
+.button_sedes {
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #13000f;
+  text-align: center;
+  font-size: 20px;
+  background: radial-gradient(#d36fb8, #c61b2f);
+  color: #fef7f9;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-left: 40px; }
+
 /* grid sedes*/
 .container-sedes {
   display: grid;
@@ -525,19 +541,56 @@
   grid-template-areas: "video_sede span1_sede" "video_sede span2_sede" "video_sede span3_sede"; }
   .container-sedes .video_sede {
     grid-area: video_sede;
-    background: linear-gradient(#fcfcff, #7bb6d8); }
+    background: linear-gradient(#fcfcff, #7bb6d8);
+    text-align: center; }
+    .container-sedes .video_sede .video_sede1 {
+      width: 80%;
+      height: 800px; }
   .container-sedes .span1_sedes {
     grid-area: span1_sede;
-    background: linear-gradient(#fcfcff, #7571c4);
-    width: 500px; }
+    text-align: center;
+    background: linear-gradient(#fcfcff, #9af7ef);
+    width: 600px;
+    margin: 10px;
+    padding: 10px; }
   .container-sedes .span2_sedes {
     grid-area: span2_sede;
-    background: linear-gradient(#fcfcff, #8aeaee);
-    width: 500px; }
+    text-align: center;
+    background: linear-gradient(#fcfcff, #f293d4);
+    width: 600px;
+    margin: 10px;
+    padding: 10px; }
   .container-sedes .span3_sedes {
     grid-area: span3_sede;
-    background: linear-gradient(#fcfcff, #5f22c2);
-    width: 500px; }
+    text-align: center;
+    background: linear-gradient(#fcfcff, #5ae7d1);
+    width: 600px;
+    margin: 10px;
+    padding: 10px; }
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+  .container-sedes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "video_sede" "span1_sedes" "span2_sedes" "span3_sedes"; }
+    .container-sedes .video_sede {
+      grid-area: video_sede; }
+    .container-sedes .span1_sedes {
+      grid-area: span1_sedes;
+      background-color: #bac1d1; }
+    .container-sedes .span2_sedes {
+      grid-area: span2_sedes;
+      background-color: #648fa1; }
+    .container-sedes .span3_sedes {
+      grid-area: span3_sedes;
+      background-color: #93cf8b; }
+  .titulo_sede {
+    font-size: 15px; }
+  .direction {
+    font-size: 15px; } }
 
 /* encabezado*/
 * {
