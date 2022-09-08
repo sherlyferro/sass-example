@@ -1,20 +1,18 @@
 /* main tratamiento*/
+
 .video_tratamiento {
     display: flex;
     flex-direction: column;
     display: grid;
     place-items: center;
     background: linear-gradient(rgb(252, 252, 255), rgb(91, 178, 198));
+       
 
     iframe {
-        width: 800px;
-        height: 600px;
-    }
+        width: 90%;
+       height: 500px;
 
-    .img_tratamiento {
-        width: 200px;
-        height: 200px;
-    }
+    } 
 
     .button_tratamientos {
         cursor: pointer;
@@ -31,7 +29,9 @@
         margin-bottom: 25px;
         margin-top: 10px;
         margin-left: 40px;
+
     }
+
 }
 
 /* grid tatamiento*/
@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 10px 10px;
 
     grid-auto-flow: row;
     grid-template-areas:
@@ -59,8 +59,8 @@
         display: flex;
         flex-direction: row;
         border-radius: 2px;
-        width: 650px;
-        height: 250px;
+        width: 90%;
+        height: 200px;
         background-color: #93daeb;
         text-align: center;
         margin: 0 auto;
@@ -68,12 +68,18 @@
 
         .titulo_tratamiento {
             font-size: 20px;
+            color: brown;
+        }
+
+        .descripcion_tratamiento {
+            color: rgb(7, 0, 0);
         }
 
         .img_tratamiento {
-            width: 220px;
-            height: 220px;
+            width: 180px;
+            height: 180px;
         }
+
     }
 
     .span1_tratamiento:hover {
@@ -84,21 +90,26 @@
         grid-area: span2_tratamiento;
         display: flex;
         flex-direction: row;
-      
+
         border-radius: 2px;
-        width: 650px;
-        height: 250px;
+        width: 90%;
+        height: 200px;
         background-color: #93daeb;
         text-align: center;
         margin: 0 auto;
 
         .titulo_tratamiento {
             font-size: 20px;
+            color: brown;
+        }
+
+        .descripcion_tratamiento {
+            color: rgb(7, 0, 0);
         }
 
         .img_tratamiento {
-            width: 220px;
-            height: 220px;
+            width: 180px;
+            height: 180px;
         }
     }
 
@@ -111,17 +122,24 @@
         display: flex;
         flex-direction: row;
         border-radius: 2px;
-        width: 650px;
-        height: 250px;
+        width: 90%;
+        height: 200px;
         background-color: #93daeb;
         text-align: center;
         margin: 0 auto;
+
         .titulo_tratamiento {
             font-size: 20px;
+            color: brown;
         }
+
+        .descripcion_tratamiento {
+            color: rgb(7, 0, 0);
+        }
+
         .img_tratamiento {
-            width: 220px;
-            height: 220px;
+            width: 180px;
+            height: 180px;
         }
 
     }
@@ -135,83 +153,146 @@
         display: flex;
         flex-direction: row;
         border-radius: 2px;
-        width: 650px;
-        height: 250px;
+        width: 90%;
+        height: 200px;
         background-color: #93daeb;
         text-align: center;
         margin: 0 auto;
+
         .titulo_tratamiento {
             font-size: 20px;
+            color: brown;
         }
+
+        .descripcion_tratamiento {
+            color: rgb(7, 0, 0);
+        }
+
         .img_tratamiento {
-            width: 220px;
-            height: 220px;
+            width: 180px;
+            height: 180px;
         }
     }
 
     .span4_tratamiento:hover {
         transform: scale(1.1);
     }
+
 }
+
 /* queries tatamiento*/
 
 
 
- /* queries tratamientos*/
- @media only screen and (min-width: 320px) and (max-width: 520px) {  
-    .img_tratamiento {
-        width: 100%;
-        height: 200px;
+/* queries tratamientos*/
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .video_tratamiento {
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        background: linear-gradient(rgb(252, 252, 255), rgb(91, 178, 198));
+
+        iframe {
+            width: 100%;
+            height: 600px;
+        }
+
+        .img_tratamiento {
+            width: 70px;
+            height: 70px;
+
+        }
     }
 
-.container-tratamiento {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    width: 100%;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "video_tratamiento "
-        "span1_tratamiento"
-        "span2_tratamiento"
-        "span3_tratamiento"
-        "span4_tratamiento"
-    ;
+    .container-tratamiento {
+        display: grid;
+        place-items: center;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 5px 5px;
+        width: 100%;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "video_tratamiento "
+            "span1_tratamiento"
+            "span2_tratamiento"
+            "span3_tratamiento"
+            "span4_tratamiento"
+        ;
 
 
-.span1_tratamiento {
-    grid-area: span1_tratamiento;
-    margin-bottom: 2px;
-    font-size: 15px;
-    width: 90%;
-    height: 100%;
+        .span1_tratamiento {
+            grid-area: span1_tratamiento;
+            margin-bottom: 2px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+
+
+            .img_tratamiento {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: auto;
+                padding: auto;
+            }
+        }
+
+
+        .span2_tratamiento {
+            grid-area: span2_tratamiento;
+            margin-bottom: 2px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .img_tratamiento {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: auto;
+                padding: auto;
+            }
+        }
+
+        .span3_tratamiento {
+            grid-area: span3_tratamiento;
+            margin-bottom: 2px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .img_tratamiento {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: auto;
+                padding: auto;
+            }
+        }
+
+        .span4_tratamiento {
+            grid-area: span4_tratamiento;
+            margin-bottom: 2px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .img_tratamiento {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: auto;
+                padding: auto;
+            }
+        }
+    }
 }
-
-
-.span2_tratamiento {
-    grid-area: span2_tratamiento;
-    margin-bottom: 2px;
-    font-size: 15px;
-    width: 90%;
-    height: 100%;
-}
-
-.span3_tratamiento {
-    grid-area: span3_tratamiento;
-    margin-bottom: 2px;
-    font-size: 15px;
-    width: 90%;
-    height: 100%;
-}
-
-.span4_tratamiento {
-    grid-area: span4_tratamiento;
-    margin-bottom: 2px;
-    font-size: 15px;
-    width: 90%;
-    height: 100%;
-}
-}
- }

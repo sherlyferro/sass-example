@@ -1,121 +1,221 @@
-.button_sedes{
-    cursor: pointer;
-    width: 250px;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid rgb(19, 0, 15);
-    text-align: center;
-    font-size: 20px;
-    background: radial-gradient(rgb(211, 111, 184), rgb(198, 27, 47));
-    color: #fef7f9;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 30px;
-    margin-bottom: 25px;
-    margin-top: 10px;
-    margin-left: 40px;
+/*amcho de las imagener en carrucel */
+.slider_index {
+    height: 750px;
+    width: 100%;
+
+}
+
+/* carrucel sedes*/
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+
+        .titulo_slider {
+            color: #a52a2a;
+            font-size: 40px;
+            animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+        }
+
+        .titulos_index {
+            font-size: 30px;
+            color: #a52a2a;
+        }
+
+        .descripcion_index {
+            color: #000;
+            font-size: 25px;
+            font-family: random($limit: 1);
+        }
+    }
+
+
+}
+
+/* tarjetas sedes*/
+.content_sedes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px 10px;
+
+    .one_sedes,
+    .two_sedes,
+    .three_sedes {
+        background: radial-gradient(#fff 50%, #b6f9f7);
+        border-radius: 5px;
+        border: 1px solid rgb(35, 110, 117);
+        width: 450px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+
+
+        .titulos_sedes {
+            color: #a52a2a;
+            font-size: 22px;
+
+        }
+
+        .descripcion_sedes {
+            font-size: 18px;
+            color: rgb(0, 0, 5);
+            margin-top: 15px;
+        }
+    }
+
 }
 
 
-/* grid sedes*/
-.container-sedes {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "video_sede span1_sede"
-        "video_sede span2_sede"
-        "video_sede span3_sede";
+
+/* hover */
+.one_sedes:hover,
+.two_sedes:hover,
+.three_sedes:hover {
+    transform: scale(1.1);
+    border: 1px solid rgb(35, 110, 117);
 
 
-    .video_sede {
-        grid-area: video_sede;
-        background: linear-gradient(rgb(252, 252, 255), rgb(123, 182, 216));
+
+}
+
+/* aplicando mixin */
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto ;
+}
+
+.card {
+    @include tamanos (90%, 150px);
+}
+
+
+
+/* queries index */
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .slider_index {
+        height: 600px;
+        width: 100%;
+
+    }
+
+    /* carrucel */
+    .carousel-caption {
+        .titulo_slider {
+            font-size: 35px;
+            animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+        }
+
+        .titulos_index {
+            font-size: 20px;
+
+        }
+
+        .descripcion_index {
+
+            font-size: 25px;
+            font-family: random($limit: 1);
+        }
+
+        .button_index {
+            font-size: 19px;
+            margin-left: 2px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .button_index:hover {
+
+            background: radial-gradient(#f487e9, #a9f2f8);
+            transform: scale(1.1);
+        }
+    }
+
+    .nav-item:hover {
+        transform: scale(1.1);
+        border-bottom: 2px solid (#fff 30%, #318f96);
+
+    }
+
+    /* grid para mobile */
+    .content_sedes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px 10px;
         text-align: center;
-        
 
-        .video_sede1 {
-            width: 80%;
-            height: 800px;
+        .one_sedes,
+        .two_Sedes,
+        .three_sedes {
+            background: radial-gradient(#fff 50%, #b6f9f7);
+            border-radius: 5px;
+            border: 1px solid rgb(35, 110, 117);
+            width: 90%;
+            height: 100%;
+            margin: 10px;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+
+            .titulos_sedes {
+                color: #a52a2a;
+                font-size: 20px;
+
+            }
+
+            .descripcion_sedes {
+                font-size: 15px;
+                color: rgb(0, 0, 5);
+                margin-top: 15px;
+            }
         }
 
     }
 
-    .span1_sedes {
-        grid-area: span1_sede;
-        text-align: center;
-        background: linear-gradient(rgb(252, 252, 255), rgb(154, 247, 239));
-        width: 600px;
-        margin: 10px;
-        padding: 10px;
 
 
-    }
 
-    .span2_sedes {
-        grid-area: span2_sede;
-        text-align: center;
-        background: linear-gradient(rgb(252, 252, 255), rgb(242, 147, 212));
-        width: 600px;
-        margin: 10px;
-        padding: 10px;
 
-    }
 
-    .span3_sedes {
-        grid-area: span3_sede;
-        text-align: center;
-        background: linear-gradient(rgb(252, 252, 255), rgb(90, 231, 209));
-        width: 600px;
-        margin: 10px;
-        padding: 10px;
+
+
+    .whatsapp:hover {
+        transform: scale(1.1);
+
+        .green_watsapp {
+            cursor: pointer;
+            color: rgb(202, 34, 102);
+        }
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 520px) {
-    .container-sedes {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "video_sede"
-            "span1_sedes"
-            "span2_sedes"
-            "span3_sedes";
-            .video_sede {
-                grid-area: video_sede;
-            }
-        
-            .span1_sedes {
-                grid-area: span1_sedes;
-                background-color: #bac1d1;
-            }
-        
-            .span2_sedes {
-                grid-area: span2_sedes;
-                background-color: #648fa1;
-            }
-        
-            .span3_sedes {
-                grid-area: span3_sedes;
-                background-color: #93cf8b;
-            }
-        
+/* palabras claves de la animacion */
+
+
+@keyframes puff-in-center {
+    0% {
+        transform: scale(2);
+        filter: blur(4px);
+        opacity: 0;
     }
 
-    .titulo_sede {
-        font-size: 15px;
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1
     }
-
-    .direction {
-        font-size: 15px;
-    }
-
-
-
-
-
 }
