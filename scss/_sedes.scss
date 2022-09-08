@@ -1,0 +1,44 @@
+
+
+
+
+/* grid sedes*/
+.container-sedes {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "video_sede span1_sede"
+        "video_sede span2_sede"
+        "video_sede span3_sede";
+
+
+.video_sede {
+    grid-area: video_sede;
+    background: linear-gradient(rgb(252, 252, 255), rgb(123, 182, 216));
+   
+}
+
+.span1_sedes {
+    grid-area: span1_sede;
+    background: linear-gradient(rgb(252, 252, 255), rgb(175, 172, 67));
+    width: 500px;
+
+}
+
+.span2_sedes {
+    grid-area: span2_sede;
+    background: linear-gradient(rgb(252, 252, 255), rgb(138, 234, 238));
+    width: 500px;
+
+}
+
+.span3_sedes {
+    grid-area: span3_sede;
+    background: linear-gradient(rgb(252, 252, 255), rgb(122, 32, 9));
+    width: 500px;
+
+}
+}
