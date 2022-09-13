@@ -133,12 +133,17 @@
             margin-left: 2px;
             margin-bottom: 20px;
             margin-top: 10px;
+          
+    
         }
 
         .button_index:hover {
 
-            background: radial-gradient(#f487e9, #a9f2f8);
-            transform: scale(1.1);
+            color: rgb(4, 4, 41);
+            background: rgb(85,219,229);
+            background: rgb(242,19,242);
+            background: linear-gradient(270deg, rgba(242,19,242,1) 1%, rgba(229,85,187,1) 51%, rgba(194,124,219,1) 94%);
+            border: 1px solid rgb(247, 7, 203);
         }
     }
 

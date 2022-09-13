@@ -6,13 +6,13 @@
     display: grid;
     place-items: center;
     background: linear-gradient(rgb(252, 252, 255), rgb(91, 178, 198));
-       
+
 
     iframe {
         width: 90%;
-       height: 500px;
+        height: 500px;
 
-    } 
+    }
 
     .button_tratamientos {
         cursor: pointer;
@@ -22,18 +22,21 @@
         border: 1px solid rgb(19, 0, 15);
         text-align: center;
         font-size: 20px;
-        background: radial-gradient(rgb(211, 111, 184), rgb(198, 27, 47));
-        color: black;
+        background: linear-gradient(0deg, rgba(180, 58, 71, 1) 0%, rgba(253, 29, 226, 1) 90%, rgba(180, 58, 71, 1) 100%);
+        color: #fef7f9;
         font-family: 'Montserrat', sans-serif;
         margin-left: 30px;
         margin-bottom: 25px;
         margin-top: 10px;
         margin-left: 40px;
     }
-    .button_tratamientos:hover{
+
+    .button_tratamientos:hover {
         color: rgb(4, 4, 41);
-    background: radial-gradient(#72FFFF, #6b1f6b);
-            transform: scale(1.1);
+        background: rgb(85, 219, 229);
+        background: rgb(242, 19, 242);
+        background: linear-gradient(270deg, rgba(242, 19, 242, 1) 1%, rgba(229, 85, 187, 1) 51%, rgba(194, 124, 219, 1) 94%);
+        border: 1px solid rgb(247, 7, 203);
     }
 
 }

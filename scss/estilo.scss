@@ -5,7 +5,7 @@
 @import 'tratamientos';
 @import 'sedes';
 
-$color:brown;
+$color: brown;
 
 /* encabezado*/
 * {
@@ -27,11 +27,11 @@ header {
     .navbar navbar-expand-lg navbar-light bg-light-nav {
         background: linear-gradient(to right, #fff 30%, #55dbe5);
         position: sticky;
-      
+
         .container-fluid {
             background: linear-gradient(to right, #fff 30%, #55dbe5);
             padding: 0;
-            
+
             .logo_index {
                 margin-top: 2px;
                 width: 70px;
@@ -40,7 +40,7 @@ header {
 
         }
 
-        
+
     }
 
 }
@@ -49,16 +49,18 @@ header {
     width: 70px;
     height: 70px;
 }
-.nav-item{
+
+.nav-item {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    
-   
+
+
 }
+
 .nav-item:hover {
     transform: scale(1.1);
     border-bottom: 2px solid #55dbe5;
-    
+
 
 }
 
@@ -68,11 +70,12 @@ header {
     width: 250px;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid rgb(19, 0, 15);
+    border: 1px solid rgb(232, 5, 213);
     text-align: center;
     font-size: 20px;
-    background: radial-gradient(rgb(211, 111, 184), rgb(198, 27, 47));
+    background: linear-gradient(0deg, rgba(180, 58, 71, 1) 0%, rgba(253, 29, 226, 1) 90%, rgba(180, 58, 71, 1) 100%);
     color: #fef7f9;
+
     font-family: 'Montserrat', sans-serif;
     margin-left: 30px;
     margin-bottom: 25px;
@@ -82,33 +85,38 @@ header {
 
 .button_index:hover {
     color: rgb(4, 4, 41);
-    background: radial-gradient(#72FFFF, #6b1f6b);
-    border: 1px solid rgb(88, 20, 79);
-    transform: scale(1.1);
-    
-    
+    background: rgb(85, 219, 229);
+    background: rgb(242, 19, 242);
+    background: linear-gradient(270deg, rgba(242, 19, 242, 1) 1%, rgba(229, 85, 187, 1) 51%, rgba(194, 124, 219, 1) 94%);
+    border: 1px solid rgb(247, 7, 203);
+
+
 }
+
 /*  fin encabezado*/
 
 
 footer {
 
-    .footer{
-        background: linear-gradient(to right, #fff 30%, #55dbe5);
-    .redes_footer_index {
-        display: inline-block;
-        padding: 10px 20px;
-        color: rgb(14, 1, 1);
-        text-decoration: none;
-        background: radial-gradient( #76e2e1,#fff );
-        size: 20px;
-    
-        a {
-            color: black;
+    .footer {
+        background: rgb(118, 226, 225);
+        background: linear-gradient(90deg, rgba(118, 226, 225, 1) 0%, rgba(242, 245, 245, 1) 52%, rgba(241, 239, 240, 1) 57%, rgba(118, 226, 225, 1) 94%);
+
+        .redes_footer_index {
+            display: inline-block;
+            padding: 10px 20px;
+            color: rgb(14, 1, 1);
+            text-decoration: none;
+            background: radial-gradient(#fff, #76e2e1);
+            size: 20px;
+
+            a {
+                color: black;
+            }
+
         }
-    
     }
-    }
+
     ul {
         padding-left: 0px;
         background-color: #FFF;
@@ -122,17 +130,18 @@ footer {
         bottom: 20px;
         right: 20px;
         font-size: 60px;
-        
+
         .green_watsapp {
             cursor: pointer;
             color: rgb(41, 114, 19);
         }
     }
 }
+
 /* area hover  */
 .whatsapp:hover {
     transform: scale(1.5);
-    
+
     .green_watsapp {
         cursor: pointer;
         color: rgb(202, 34, 102);
@@ -174,5 +183,3 @@ $color in $redes {
 .fa-brands-fa-tiktok {
     @extend.fa-brands-fa-facebook;
 }
-
-
