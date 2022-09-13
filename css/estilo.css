@@ -96,7 +96,7 @@
   .carousel-caption .titulos_index {
     font-size: 20px; }
   .carousel-caption .descripcion_index {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 1; }
   .carousel-caption .button_index {
     font-size: 19px;
@@ -123,7 +123,7 @@
       grid-area: one; }
       .content-container .one .card {
         width: 90%;
-        height: 150px;
+        height: 165px;
         margin-left: 10px; }
         .content-container .one .card .titulos_index {
           font-size: 20px; }
@@ -416,7 +416,7 @@
   .container-tratamiento .video_tratamiento {
     grid-area: video_tratamiento;
     margin-bottom: 20px; }
-  .container-tratamiento .span1_tratamiento {
+  .container-tratamiento .span1_tratamiento, .container-tratamiento .span2_tratamiento, .container-tratamiento .span3_tratamiento, .container-tratamiento .span4_tratamiento {
     grid-area: span1_tratamiento;
     display: flex;
     flex-direction: row;
@@ -427,78 +427,29 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5px; }
-    .container-tratamiento .span1_tratamiento .titulo_tratamiento {
+    .container-tratamiento .span1_tratamiento .titulo_tratamiento, .container-tratamiento .span2_tratamiento .titulo_tratamiento, .container-tratamiento .span3_tratamiento .titulo_tratamiento, .container-tratamiento .span4_tratamiento .titulo_tratamiento {
       font-size: 20px;
       color: brown; }
-    .container-tratamiento .span1_tratamiento .descripcion_tratamiento {
+    .container-tratamiento .span1_tratamiento .descripcion_tratamiento, .container-tratamiento .span2_tratamiento .descripcion_tratamiento, .container-tratamiento .span3_tratamiento .descripcion_tratamiento, .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
       color: #070000; }
-    .container-tratamiento .span1_tratamiento .img_tratamiento {
+    .container-tratamiento .span1_tratamiento .img_tratamiento, .container-tratamiento .span2_tratamiento .img_tratamiento, .container-tratamiento .span3_tratamiento .img_tratamiento, .container-tratamiento .span4_tratamiento .img_tratamiento {
       width: 180px;
       height: 180px; }
   .container-tratamiento .span1_tratamiento:hover {
     transform: scale(1.1); }
   .container-tratamiento .span2_tratamiento {
-    grid-area: span2_tratamiento;
-    display: flex;
-    flex-direction: row;
-    border-radius: 2px;
-    width: 90%;
-    height: 200px;
-    background-color: #93daeb;
-    text-align: center;
-    margin: 0 auto; }
-    .container-tratamiento .span2_tratamiento .titulo_tratamiento {
-      font-size: 20px;
-      color: brown; }
-    .container-tratamiento .span2_tratamiento .descripcion_tratamiento {
-      color: #070000; }
-    .container-tratamiento .span2_tratamiento .img_tratamiento {
-      width: 180px;
-      height: 180px; }
+    grid-area: span2_tratamiento; }
   .container-tratamiento .span2_tratamiento:hover {
     transform: scale(1.1); }
   .container-tratamiento .span3_tratamiento {
-    grid-area: span3_tratamiento;
-    display: flex;
-    flex-direction: row;
-    border-radius: 2px;
-    width: 90%;
-    height: 200px;
-    background-color: #93daeb;
-    text-align: center;
-    margin: 0 auto; }
-    .container-tratamiento .span3_tratamiento .titulo_tratamiento {
-      font-size: 20px;
-      color: brown; }
-    .container-tratamiento .span3_tratamiento .descripcion_tratamiento {
-      color: #070000; }
-    .container-tratamiento .span3_tratamiento .img_tratamiento {
-      width: 180px;
-      height: 180px; }
+    grid-area: span3_tratamiento; }
   .container-tratamiento .span3_tratamiento:hover {
     transform: scale(1.1); }
   .container-tratamiento .span4_tratamiento {
-    grid-area: span4_tratamiento;
-    display: flex;
-    flex-direction: row;
-    border-radius: 2px;
-    width: 90%;
-    height: 200px;
-    background-color: #93daeb;
-    text-align: center;
-    margin: 0 auto; }
-    .container-tratamiento .span4_tratamiento .titulo_tratamiento {
-      font-size: 20px;
-      color: brown; }
-    .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
-      color: #070000; }
-    .container-tratamiento .span4_tratamiento .img_tratamiento {
-      width: 180px;
-      height: 180px; }
+    grid-area: span4_tratamiento; }
   .container-tratamiento .span4_tratamiento:hover {
     transform: scale(1.1); }
 
-/* queries tatamiento*/
 /* queries tratamientos*/
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   .video_tratamiento {
@@ -523,58 +474,27 @@
     width: 100%;
     grid-auto-flow: row;
     grid-template-areas: "video_tratamiento " "span1_tratamiento" "span2_tratamiento" "span3_tratamiento" "span4_tratamiento"; }
-    .container-tratamiento .span1_tratamiento {
+    .container-tratamiento .span1_tratamiento, .container-tratamiento .span2_tratamiento, .container-tratamiento .span3_tratamiento, .container-tratamiento .span4_tratamiento {
       grid-area: span1_tratamiento;
       margin-bottom: 2px;
-      font-size: 15px;
+      margin-top: 5px;
       display: flex;
       flex-direction: column;
       height: 100%; }
-      .container-tratamiento .span1_tratamiento .img_tratamiento {
+      .container-tratamiento .span1_tratamiento .descripcion_tratamiento, .container-tratamiento .span2_tratamiento .descripcion_tratamiento, .container-tratamiento .span3_tratamiento .descripcion_tratamiento, .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
+        font-size: 14px; }
+      .container-tratamiento .span1_tratamiento .img_tratamiento, .container-tratamiento .span2_tratamiento .img_tratamiento, .container-tratamiento .span3_tratamiento .img_tratamiento, .container-tratamiento .span4_tratamiento .img_tratamiento {
         width: 150px;
         height: 150px;
         display: block;
         margin: auto;
         padding: auto; }
     .container-tratamiento .span2_tratamiento {
-      grid-area: span2_tratamiento;
-      margin-bottom: 2px;
-      font-size: 15px;
-      display: flex;
-      flex-direction: column;
-      height: 100%; }
-      .container-tratamiento .span2_tratamiento .img_tratamiento {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: auto;
-        padding: auto; }
+      grid-area: span2_tratamiento; }
     .container-tratamiento .span3_tratamiento {
-      grid-area: span3_tratamiento;
-      margin-bottom: 2px;
-      font-size: 15px;
-      display: flex;
-      flex-direction: column;
-      height: 100%; }
-      .container-tratamiento .span3_tratamiento .img_tratamiento {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: auto;
-        padding: auto; }
+      grid-area: span3_tratamiento; }
     .container-tratamiento .span4_tratamiento {
-      grid-area: span4_tratamiento;
-      margin-bottom: 2px;
-      font-size: 15px;
-      display: flex;
-      flex-direction: column;
-      height: 100%; }
-      .container-tratamiento .span4_tratamiento .img_tratamiento {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: auto;
-        padding: auto; } }
+      grid-area: span4_tratamiento; } }
 
 /*amcho de las imagener en carrucel */
 .slider_index {
@@ -631,7 +551,7 @@
     .content_sedes .one_sedes .descripcion_sedes,
     .content_sedes .two_sedes .descripcion_sedes,
     .content_sedes .three_sedes .descripcion_sedes {
-      font-size: 18px;
+      font-size: 15px;
       color: #000005;
       margin-top: 15px; }
 

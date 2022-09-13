@@ -61,7 +61,7 @@
         margin-bottom: 20px;
     }
 
-    .span1_tratamiento {
+    .span1_tratamiento,.span2_tratamiento,.span3_tratamiento,.span4_tratamiento{
         grid-area: span1_tratamiento;
         display: flex;
         flex-direction: row;
@@ -95,29 +95,7 @@
 
     .span2_tratamiento {
         grid-area: span2_tratamiento;
-        display: flex;
-        flex-direction: row;
-
-        border-radius: 2px;
-        width: 90%;
-        height: 200px;
-        background-color: #93daeb;
-        text-align: center;
-        margin: 0 auto;
-
-        .titulo_tratamiento {
-            font-size: 20px;
-            color: brown;
-        }
-
-        .descripcion_tratamiento {
-            color: rgb(7, 0, 0);
-        }
-
-        .img_tratamiento {
-            width: 180px;
-            height: 180px;
-        }
+       
     }
 
     .span2_tratamiento:hover {
@@ -126,28 +104,7 @@
 
     .span3_tratamiento {
         grid-area: span3_tratamiento;
-        display: flex;
-        flex-direction: row;
-        border-radius: 2px;
-        width: 90%;
-        height: 200px;
-        background-color: #93daeb;
-        text-align: center;
-        margin: 0 auto;
-
-        .titulo_tratamiento {
-            font-size: 20px;
-            color: brown;
-        }
-
-        .descripcion_tratamiento {
-            color: rgb(7, 0, 0);
-        }
-
-        .img_tratamiento {
-            width: 180px;
-            height: 180px;
-        }
+      
 
     }
 
@@ -157,28 +114,7 @@
 
     .span4_tratamiento {
         grid-area: span4_tratamiento;
-        display: flex;
-        flex-direction: row;
-        border-radius: 2px;
-        width: 90%;
-        height: 200px;
-        background-color: #93daeb;
-        text-align: center;
-        margin: 0 auto;
-
-        .titulo_tratamiento {
-            font-size: 20px;
-            color: brown;
-        }
-
-        .descripcion_tratamiento {
-            color: rgb(7, 0, 0);
-        }
-
-        .img_tratamiento {
-            width: 180px;
-            height: 180px;
-        }
+        
     }
 
     .span4_tratamiento:hover {
@@ -186,9 +122,6 @@
     }
 
 }
-
-/* queries tatamiento*/
-
 
 
 /* queries tratamientos*/
@@ -231,14 +164,20 @@
         ;
 
 
-        .span1_tratamiento {
+        .span1_tratamiento,
+        .span2_tratamiento,
+        .span3_tratamiento,
+        .span4_tratamiento {
             grid-area: span1_tratamiento;
             margin-bottom: 2px;
-            font-size: 15px;
+margin-top: 5px;
             display: flex;
             flex-direction: column;
             height: 100%;
 
+            .descripcion_tratamiento {
+                font-size: 14px;
+            }
 
 
             .img_tratamiento {
@@ -253,53 +192,17 @@
 
         .span2_tratamiento {
             grid-area: span2_tratamiento;
-            margin-bottom: 2px;
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
 
-            .img_tratamiento {
-                width: 150px;
-                height: 150px;
-                display: block;
-                margin: auto;
-                padding: auto;
-            }
         }
 
         .span3_tratamiento {
             grid-area: span3_tratamiento;
-            margin-bottom: 2px;
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
 
-            .img_tratamiento {
-                width: 150px;
-                height: 150px;
-                display: block;
-                margin: auto;
-                padding: auto;
-            }
         }
 
         .span4_tratamiento {
             grid-area: span4_tratamiento;
-            margin-bottom: 2px;
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
 
-            .img_tratamiento {
-                width: 150px;
-                height: 150px;
-                display: block;
-                margin: auto;
-                padding: auto;
-            }
         }
     }
 }
