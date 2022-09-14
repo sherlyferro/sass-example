@@ -53,8 +53,7 @@
 
 /* hover */
 .card:hover {
-  transform: scale(1.1);
-  border: 1px solid #236e75; }
+  transform: scale(1.1); }
 
 /* aplicando mixin */
 .card {
@@ -520,8 +519,7 @@
 /*amcho de las imagener en carrucel */
 .slider_sedes {
   height: 750px;
-  width: 100%;
-  object-fit: cover; }
+  width: 100%; }
 
 /* carrucel sedes*/
 .container-fluid {
