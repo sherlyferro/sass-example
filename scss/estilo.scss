@@ -22,7 +22,7 @@ header {
     width: 100%;
     z-index: 100%;
     position: sticky;
-    z-index: 100%;
+   
 
     .navbar navbar-expand-lg navbar-light bg-light-nav {
         background: linear-gradient(to right, #fff 30%, #55dbe5);
@@ -31,16 +31,7 @@ header {
         .container-fluid {
             background: linear-gradient(to right, #fff 30%, #55dbe5);
             padding: 0;
-
-            .logo_index {
-                margin-top: 2px;
-                width: 70px;
-                height: 70px;
-            }
-
         }
-
-
     }
 
 }
@@ -53,6 +44,7 @@ header {
 .nav-item {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    
 
 
 }
@@ -99,7 +91,7 @@ header {
 footer {
 
     .footer {
-        background: rgb(118, 226, 225);
+        background: #76e2e1;
         background: linear-gradient(90deg, rgba(118, 226, 225, 1) 0%, rgba(242, 245, 245, 1) 52%, rgba(241, 239, 240, 1) 57%, rgba(118, 226, 225, 1) 94%);
 
         .redes_footer_index {

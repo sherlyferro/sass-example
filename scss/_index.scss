@@ -1,17 +1,19 @@
 /* main index */
 /*amcho de las imagener en carrucel */
-.slider_index {
-    height: 750px;
-    width: 100%;
-
-}
-
-/* carrucel */
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
-
-    .carousel-caption {
+.slider_index{
+object-fit: cover;
+}
+  
+.carousel-inner{
+    .slider_index {
+        height: 750px;
+        width: 100%;
+    
+    }
+    .carousel-caption{
         position: absolute;
         bottom: 1.25rem;
         left: 15%;
@@ -20,27 +22,21 @@
         color: #fff;
         text-align: center;
         margin-bottom: 30px;
-
         .titulo_slider {
             color: #a52a2a;
-            font-size: 40px;
+            font-size: 75px;
             animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
         }
-
-        .titulos_index {
-            font-size: 30px;
-            color: #a52a2a;
-        }
-
         .descripcion_index {
             color: #000;
-            font-size: 25px;
+            font-size: 30px;
             font-family: random($limit: 1);
         }
     }
-
-    
 }
+}
+
+
 
 /* farjetas*/
 .card {
@@ -139,7 +135,7 @@
     .slider_index {
         height: 600px;
         width: 100%;
-
+        object-fit: cover;
     }
 
     /* carrucel */

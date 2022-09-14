@@ -67,7 +67,7 @@
         flex-direction: row;
         border-radius: 2px;
         width: 90%;
-        height: 200px;
+        height: 182px;
         background-color: #93daeb;
         text-align: center;
         margin: 0 auto;
@@ -76,10 +76,12 @@
         .titulo_tratamiento {
             font-size: 20px;
             color: brown;
+            margin-top: 10px;
         }
 
         .descripcion_tratamiento {
             color: rgb(7, 0, 0);
+            margin: 5px;
         }
 
         .img_tratamiento {

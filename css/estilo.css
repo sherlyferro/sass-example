@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 /* main index */
 /*amcho de las imagener en carrucel */
-.slider_index {
-  height: 750px;
-  width: 100%; }
-
-/* carrucel */
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
-  .container-fluid .carousel-caption {
+  .container-fluid .slider_index {
+    object-fit: cover; }
+  .container-fluid .carousel-inner .slider_index {
+    height: 750px;
+    width: 100%; }
+  .container-fluid .carousel-inner .carousel-caption {
     position: absolute;
     bottom: 1.25rem;
     left: 15%;
@@ -18,16 +18,13 @@
     color: #fff;
     text-align: center;
     margin-bottom: 30px; }
-    .container-fluid .carousel-caption .titulo_slider {
+    .container-fluid .carousel-inner .carousel-caption .titulo_slider {
       color: #a52a2a;
-      font-size: 40px;
+      font-size: 75px;
       animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
-    .container-fluid .carousel-caption .titulos_index {
-      font-size: 30px;
-      color: #a52a2a; }
-    .container-fluid .carousel-caption .descripcion_index {
+    .container-fluid .carousel-inner .carousel-caption .descripcion_index {
       color: #000;
-      font-size: 25px;
+      font-size: 30px;
       font-family: 1; }
 
 /* farjetas*/
@@ -88,7 +85,8 @@
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   .slider_index {
     height: 600px;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
   /* carrucel */
   .carousel-caption .titulo_slider {
     font-size: 35px;
@@ -184,7 +182,8 @@
   /* area tarjetas*/ }
   .row .imagen_nosotros {
     height: 750px;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
   .row .staff_nosotros {
     font-size: 40px;
     text-align: center;
@@ -213,18 +212,17 @@
     border: 1px solid #f707cb; }
   .row .card-nosotros {
     text-align: center;
-    padding-top: 10px;
     background-color: #118f8f;
     margin: 40px;
-    padding: 10px;
-    width: 100%;
+    width: 320px;
     height: 600px;
     margin-bottom: 30px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding-left: 0; }
     .row .card-nosotros .card-img-top {
       height: 60%;
-      width: 90%;
-      margin-top: 10px; }
+      width: 320px;
+      object-fit: cover; }
   .row .card-title-nosotros {
     background: white;
     background: radial-gradient(circle, white 3%, #118f8f 100%);
@@ -422,16 +420,18 @@
     flex-direction: row;
     border-radius: 2px;
     width: 90%;
-    height: 200px;
+    height: 182px;
     background-color: #93daeb;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5px; }
     .container-tratamiento .span1_tratamiento .titulo_tratamiento, .container-tratamiento .span2_tratamiento .titulo_tratamiento, .container-tratamiento .span3_tratamiento .titulo_tratamiento, .container-tratamiento .span4_tratamiento .titulo_tratamiento {
       font-size: 20px;
-      color: brown; }
+      color: brown;
+      margin-top: 10px; }
     .container-tratamiento .span1_tratamiento .descripcion_tratamiento, .container-tratamiento .span2_tratamiento .descripcion_tratamiento, .container-tratamiento .span3_tratamiento .descripcion_tratamiento, .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
-      color: #070000; }
+      color: #070000;
+      margin: 5px; }
     .container-tratamiento .span1_tratamiento .img_tratamiento, .container-tratamiento .span2_tratamiento .img_tratamiento, .container-tratamiento .span3_tratamiento .img_tratamiento, .container-tratamiento .span4_tratamiento .img_tratamiento {
       width: 180px;
       height: 180px; }
@@ -497,9 +497,10 @@
       grid-area: span4_tratamiento; } }
 
 /*amcho de las imagener en carrucel */
-.slider_index {
+.slider_sedes {
   height: 750px;
-  width: 100%; }
+  width: 100%;
+  object-fit: cover; }
 
 /* carrucel sedes*/
 .container-fluid {
@@ -656,18 +657,13 @@ header {
   top: 0;
   width: 100%;
   z-index: 100%;
-  position: sticky;
-  z-index: 100%; }
+  position: sticky; }
   header .navbar navbar-expand-lg navbar-light bg-light-nav {
     background: linear-gradient(to right, #fff 30%, #55dbe5);
     position: sticky; }
     header .navbar navbar-expand-lg navbar-light bg-light-nav .container-fluid {
       background: linear-gradient(to right, #fff 30%, #55dbe5);
       padding: 0; }
-      header .navbar navbar-expand-lg navbar-light bg-light-nav .container-fluid .logo_index {
-        margin-top: 2px;
-        width: 70px;
-        height: 70px; }
 
 .logo_index {
   width: 70px;
