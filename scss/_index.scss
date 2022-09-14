@@ -3,37 +3,41 @@
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
-.slider_index{
-object-fit: cover;
-}
-  
-.carousel-inner{
+
     .slider_index {
-        height: 750px;
-        width: 100%;
-    
+        object-fit: cover;
     }
-    .carousel-caption{
-        position: absolute;
-        bottom: 1.25rem;
-        left: 15%;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 30px;
-        .titulo_slider {
-            color: #a52a2a;
-            font-size: 75px;
-            animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+
+    .carousel-inner {
+        .slider_index {
+            height: 750px;
+            width: 100%;
+
         }
-        .descripcion_index {
-            color: #000;
-            font-size: 30px;
-            font-family: random($limit: 1);
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 1.25rem;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+
+            .titulo_slider {
+                color: #a52a2a;
+                font-size: 75px;
+                animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+            }
+
+            .descripcion_index {
+                color: #000;
+                font-size: 30px;
+                font-family: random($limit: 1);
+            }
         }
     }
-}
 }
 
 
@@ -65,7 +69,8 @@ object-fit: cover;
 
     .descripcion_index {
         color: #000;
-        font-size: 15px;
+        font-size: 20px;
+        margin: 5px;
     }
 }
 
@@ -73,8 +78,8 @@ object-fit: cover;
 .card:hover {
     transform: scale(1.1);
     border: 1px solid rgb(35, 110, 117);
-    
-  
+
+
 
 }
 
@@ -140,6 +145,7 @@ object-fit: cover;
 
     /* carrucel */
     .carousel-caption {
+
         .titulo_slider {
             font-size: 35px;
             animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
@@ -158,15 +164,15 @@ object-fit: cover;
 
         .button_index {
             font-size: 19px;
-            margin-left: 2px;
-            margin-bottom: 20px;
+            margin-left: 10px;
+
             margin-top: 10px;
         }
 
         .button_index:hover {
             color: rgb(4, 4, 41);
             background: radial-gradient(#72FFFF, #6b1f6b);
-                    transform: scale(1.1);
+            transform: scale(1.1);
         }
     }
 

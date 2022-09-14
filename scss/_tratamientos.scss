@@ -19,11 +19,12 @@
         width: 250px;
         height: 40px;
         border-radius: 20px;
-        border: 1px solid rgb(19, 0, 15);
+        border: 1px solid rgb(134, 239, 251);
         text-align: center;
         font-size: 20px;
-        background: linear-gradient(0deg, rgba(180, 58, 71, 1) 0%, rgba(253, 29, 226, 1) 90%, rgba(180, 58, 71, 1) 100%);
-        color: #fef7f9;
+        background: rgb(85, 219, 229);
+        background: linear-gradient(90deg, rgba(85, 219, 229, 1) 16%, rgba(208, 250, 250, 1) 45%, rgba(85, 219, 229, 1) 78%);
+        color: #080002;
         font-family: 'Montserrat', sans-serif;
         margin-left: 30px;
         margin-bottom: 25px;
@@ -33,10 +34,9 @@
 
     .button_tratamientos:hover {
         color: rgb(4, 4, 41);
-        background: rgb(85, 219, 229);
-        background: rgb(242, 19, 242);
-        background: linear-gradient(270deg, rgba(242, 19, 242, 1) 1%, rgba(229, 85, 187, 1) 51%, rgba(194, 124, 219, 1) 94%);
-        border: 1px solid rgb(247, 7, 203);
+        background: rgb(187, 246, 232);
+        background: linear-gradient(90deg, rgba(187, 246, 232, 1) 26%, rgba(196, 248, 251, 1) 45%, rgba(187, 246, 232, 1) 65%);
+        border: 1px solid rgb(244, 248, 248);
     }
 
 }
@@ -61,7 +61,10 @@
         margin-bottom: 20px;
     }
 
-    .span1_tratamiento,.span2_tratamiento,.span3_tratamiento,.span4_tratamiento{
+    .span1_tratamiento,
+    .span2_tratamiento,
+    .span3_tratamiento,
+    .span4_tratamiento {
         grid-area: span1_tratamiento;
         display: flex;
         flex-direction: row;
@@ -87,6 +90,7 @@
         .img_tratamiento {
             width: 180px;
             height: 180px;
+            object-fit: cover;
         }
 
     }
@@ -97,7 +101,7 @@
 
     .span2_tratamiento {
         grid-area: span2_tratamiento;
-       
+
     }
 
     .span2_tratamiento:hover {
@@ -106,7 +110,7 @@
 
     .span3_tratamiento {
         grid-area: span3_tratamiento;
-      
+
 
     }
 
@@ -116,7 +120,7 @@
 
     .span4_tratamiento {
         grid-area: span4_tratamiento;
-        
+
     }
 
     .span4_tratamiento:hover {
@@ -172,7 +176,7 @@
         .span4_tratamiento {
             grid-area: span1_tratamiento;
             margin-bottom: 2px;
-margin-top: 5px;
+            margin-top: 5px;
             display: flex;
             flex-direction: column;
             height: 100%;

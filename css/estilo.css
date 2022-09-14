@@ -48,7 +48,8 @@
     margin-top: 5px; }
   .card .descripcion_index {
     color: #000;
-    font-size: 15px; }
+    font-size: 20px;
+    margin: 5px; }
 
 /* hover */
 .card:hover {
@@ -98,8 +99,7 @@
     font-family: 1; }
   .carousel-caption .button_index {
     font-size: 19px;
-    margin-left: 2px;
-    margin-bottom: 20px;
+    margin-left: 10px;
     margin-top: 10px; }
   .carousel-caption .button_index:hover {
     color: #040429;
@@ -196,20 +196,19 @@
     width: 250px;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid #13000f;
+    border: 1px solid #86effb;
     text-align: center;
     font-size: 20px;
-    background: #b43a47;
-    background: linear-gradient(0deg, #b43a47 0%, #fd1de2 90%, #b43a47 100%);
-    color: #fef7f9;
+    background: #55dbe5;
+    background: linear-gradient(90deg, #55dbe5 16%, #d0fafa 45%, #55dbe5 78%);
+    color: #0d0007;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px; }
   .row .button_nosotros:hover {
     color: #040429;
-    background: #55dbe5;
-    background: #f213f2;
-    background: linear-gradient(270deg, #f213f2 1%, #e555bb 51%, #c27cdb 94%);
-    border: 1px solid #f707cb; }
+    background: #bbf6e8;
+    background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
+    border: 1px solid #f4f8f8; }
   .row .card-nosotros {
     text-align: center;
     background-color: #118f8f;
@@ -246,8 +245,6 @@
     text-align: center;
     padding-top: 10px;
     background-color: #118f8f;
-    margin: 20px;
-    padding: 10px;
     width: 100%;
     height: 550px;
     margin-bottom: 10px;
@@ -271,12 +268,15 @@
 /* main de pacientes*/
 .blaqueamiento {
   text-align: center;
-  color: #fef7f9; }
+  color: #050002; }
   .blaqueamiento .bg-pan-bottom {
     animation: bg-pan-bottom 8s both; }
   .blaqueamiento .img_blaqueamiento {
     width: 100%;
-    height: 600px; }
+    height: 600px;
+    border-radius: 5px;
+    margin-left: 15px;
+    object-fit: cover; }
   .blaqueamiento .descripcion_pacientes {
     margin-top: 10px;
     margin: 20px; }
@@ -288,21 +288,21 @@
   height: 40px;
   margin-top: 10px;
   border-radius: 20px;
-  border: 1px solid black;
+  border: 1px solid #86effb;
   text-align: center;
   font-size: 20px;
-  background: linear-gradient(0deg, #b43a47 0%, #fd1de2 90%, #b43a47 100%);
-  color: #fef7f9;
+  background: #55dbe5;
+  background: linear-gradient(90deg, #55dbe5 16%, #d0fafa 45%, #55dbe5 78%);
+  color: #0a0003;
   font-family: 'Montserrat', sans-serif;
   margin-left: 30px;
   animation: blink-1 .6s both; }
 
 .button_pacientes:hover {
   color: #040429;
-  background: #55dbe5;
-  background: #f213f2;
-  background: linear-gradient(270deg, #f213f2 1%, #e555bb 51%, #c27cdb 94%);
-  border: 1px solid #f707cb; }
+  background: #bbf6e8;
+  background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
+  border: 1px solid #f4f8f8; }
 
 /* grid pacientes*/
 .container-pacientes {
@@ -311,32 +311,31 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 15px 15px;
-  background-color: #011011;
+  background-color: #E1FFEE;
   grid-auto-flow: row;
   grid-template-areas: "blaqueamiento blaqueamiento span1 span2" "blaqueamiento blaqueamiento span3 span4"; }
   .container-pacientes .span1,
   .container-pacientes .span2,
   .container-pacientes .span3,
   .container-pacientes .span4 {
-    background: #000909;
-    background: linear-gradient(90deg, #000909 16%, #6ceaeb 45%, #090700 78%);
+    background-color: #E1FFEE;
     text-align: center;
     height: 380px; }
     .container-pacientes .span1 .tex_pacientes,
     .container-pacientes .span2 .tex_pacientes,
     .container-pacientes .span3 .tex_pacientes,
     .container-pacientes .span4 .tex_pacientes {
-      color: #fef7f9; }
+      color: #0f0105; }
     .container-pacientes .span1 .img_pacientes,
     .container-pacientes .span2 .img_pacientes,
     .container-pacientes .span3 .img_pacientes,
     .container-pacientes .span4 .img_pacientes {
       width: 300px;
-      height: 300px; }
+      height: 300px;
+      border-radius: 5px; }
   .container-pacientes .blaqueamiento {
     grid-area: blaqueamiento;
-    background: #000909;
-    background: linear-gradient(90deg, #000909 10%, #0e7e7e 42%, #000909 91%); }
+    background-color: #E1FFEE; }
   .container-pacientes .span1 {
     grid-area: span1; }
   .container-pacientes .span2 {
@@ -386,11 +385,12 @@
     width: 250px;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid #13000f;
+    border: 1px solid #86effb;
     text-align: center;
     font-size: 20px;
-    background: linear-gradient(0deg, #b43a47 0%, #fd1de2 90%, #b43a47 100%);
-    color: #fef7f9;
+    background: #55dbe5;
+    background: linear-gradient(90deg, #55dbe5 16%, #d0fafa 45%, #55dbe5 78%);
+    color: #080002;
     font-family: 'Montserrat', sans-serif;
     margin-left: 30px;
     margin-bottom: 25px;
@@ -398,10 +398,9 @@
     margin-left: 40px; }
   .video_tratamiento .button_tratamientos:hover {
     color: #040429;
-    background: #55dbe5;
-    background: #f213f2;
-    background: linear-gradient(270deg, #f213f2 1%, #e555bb 51%, #c27cdb 94%);
-    border: 1px solid #f707cb; }
+    background: #bbf6e8;
+    background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
+    border: 1px solid #f4f8f8; }
 
 /* grid tatamiento*/
 .container-tratamiento {
@@ -414,7 +413,10 @@
   .container-tratamiento .video_tratamiento {
     grid-area: video_tratamiento;
     margin-bottom: 20px; }
-  .container-tratamiento .span1_tratamiento, .container-tratamiento .span2_tratamiento, .container-tratamiento .span3_tratamiento, .container-tratamiento .span4_tratamiento {
+  .container-tratamiento .span1_tratamiento,
+  .container-tratamiento .span2_tratamiento,
+  .container-tratamiento .span3_tratamiento,
+  .container-tratamiento .span4_tratamiento {
     grid-area: span1_tratamiento;
     display: flex;
     flex-direction: row;
@@ -425,16 +427,26 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5px; }
-    .container-tratamiento .span1_tratamiento .titulo_tratamiento, .container-tratamiento .span2_tratamiento .titulo_tratamiento, .container-tratamiento .span3_tratamiento .titulo_tratamiento, .container-tratamiento .span4_tratamiento .titulo_tratamiento {
+    .container-tratamiento .span1_tratamiento .titulo_tratamiento,
+    .container-tratamiento .span2_tratamiento .titulo_tratamiento,
+    .container-tratamiento .span3_tratamiento .titulo_tratamiento,
+    .container-tratamiento .span4_tratamiento .titulo_tratamiento {
       font-size: 20px;
       color: brown;
       margin-top: 10px; }
-    .container-tratamiento .span1_tratamiento .descripcion_tratamiento, .container-tratamiento .span2_tratamiento .descripcion_tratamiento, .container-tratamiento .span3_tratamiento .descripcion_tratamiento, .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
+    .container-tratamiento .span1_tratamiento .descripcion_tratamiento,
+    .container-tratamiento .span2_tratamiento .descripcion_tratamiento,
+    .container-tratamiento .span3_tratamiento .descripcion_tratamiento,
+    .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
       color: #070000;
       margin: 5px; }
-    .container-tratamiento .span1_tratamiento .img_tratamiento, .container-tratamiento .span2_tratamiento .img_tratamiento, .container-tratamiento .span3_tratamiento .img_tratamiento, .container-tratamiento .span4_tratamiento .img_tratamiento {
+    .container-tratamiento .span1_tratamiento .img_tratamiento,
+    .container-tratamiento .span2_tratamiento .img_tratamiento,
+    .container-tratamiento .span3_tratamiento .img_tratamiento,
+    .container-tratamiento .span4_tratamiento .img_tratamiento {
       width: 180px;
-      height: 180px; }
+      height: 180px;
+      object-fit: cover; }
   .container-tratamiento .span1_tratamiento:hover {
     transform: scale(1.1); }
   .container-tratamiento .span2_tratamiento {
@@ -474,16 +486,25 @@
     width: 100%;
     grid-auto-flow: row;
     grid-template-areas: "video_tratamiento " "span1_tratamiento" "span2_tratamiento" "span3_tratamiento" "span4_tratamiento"; }
-    .container-tratamiento .span1_tratamiento, .container-tratamiento .span2_tratamiento, .container-tratamiento .span3_tratamiento, .container-tratamiento .span4_tratamiento {
+    .container-tratamiento .span1_tratamiento,
+    .container-tratamiento .span2_tratamiento,
+    .container-tratamiento .span3_tratamiento,
+    .container-tratamiento .span4_tratamiento {
       grid-area: span1_tratamiento;
       margin-bottom: 2px;
       margin-top: 5px;
       display: flex;
       flex-direction: column;
       height: 100%; }
-      .container-tratamiento .span1_tratamiento .descripcion_tratamiento, .container-tratamiento .span2_tratamiento .descripcion_tratamiento, .container-tratamiento .span3_tratamiento .descripcion_tratamiento, .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
+      .container-tratamiento .span1_tratamiento .descripcion_tratamiento,
+      .container-tratamiento .span2_tratamiento .descripcion_tratamiento,
+      .container-tratamiento .span3_tratamiento .descripcion_tratamiento,
+      .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
         font-size: 14px; }
-      .container-tratamiento .span1_tratamiento .img_tratamiento, .container-tratamiento .span2_tratamiento .img_tratamiento, .container-tratamiento .span3_tratamiento .img_tratamiento, .container-tratamiento .span4_tratamiento .img_tratamiento {
+      .container-tratamiento .span1_tratamiento .img_tratamiento,
+      .container-tratamiento .span2_tratamiento .img_tratamiento,
+      .container-tratamiento .span3_tratamiento .img_tratamiento,
+      .container-tratamiento .span4_tratamiento .img_tratamiento {
         width: 150px;
         height: 150px;
         display: block;
@@ -658,6 +679,8 @@ header {
   width: 100%;
   z-index: 100%;
   position: sticky; }
+  header .navbar-toggler {
+    margin-right: 10px; }
   header .navbar navbar-expand-lg navbar-light bg-light-nav {
     background: linear-gradient(to right, #fff 30%, #55dbe5);
     position: sticky; }
@@ -683,11 +706,12 @@ header {
   width: 250px;
   height: 40px;
   border-radius: 20px;
-  border: 1px solid #e805d5;
+  border: 1px solid #86effb;
   text-align: center;
   font-size: 20px;
-  background: linear-gradient(0deg, #b43a47 0%, #fd1de2 90%, #b43a47 100%);
-  color: #fef7f9;
+  background: #55dbe5;
+  background: linear-gradient(90deg, #55dbe5 16%, #d0fafa 45%, #55dbe5 78%);
+  color: #0b0104;
   font-family: 'Montserrat', sans-serif;
   margin-left: 30px;
   margin-bottom: 25px;
@@ -696,10 +720,9 @@ header {
 
 .button_index:hover {
   color: #040429;
-  background: #55dbe5;
-  background: #f213f2;
-  background: linear-gradient(270deg, #f213f2 1%, #e555bb 51%, #c27cdb 94%);
-  border: 1px solid #f707cb; }
+  background: #bbf6e8;
+  background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
+  border: 1px solid #f4f8f8; }
 
 /*  fin encabezado*/
 footer .footer {
