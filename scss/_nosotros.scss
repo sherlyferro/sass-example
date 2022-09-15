@@ -83,6 +83,7 @@
 
             height: 550px;
             width: 100%;
+            object-fit: cover;
         }
 
         .staff_nosotros {
@@ -96,7 +97,7 @@
 
         .card-nosotros {
             text-align: center;
-            padding-top: 10px;
+            
             background-color: #118f8f;
 
 
@@ -104,7 +105,9 @@
             height: 550px;
             margin-bottom: 10px;
             border-radius: 5px;
-
+            .card-img-top{
+object-fit: cover;
+            }
 
         }
     }
