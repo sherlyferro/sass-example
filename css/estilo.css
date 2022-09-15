@@ -677,7 +677,8 @@
 
 header {
   overflow: hidden;
-  background: linear-gradient(to right, #fff 30%, #55dbe5);
+  background: white;
+  background: linear-gradient(90deg, white 23%, #12ebe8 45%, #3836dd 87%);
   top: 0;
   width: 100%;
   z-index: 100%;
@@ -688,7 +689,6 @@ header {
     background: linear-gradient(to right, #fff 30%, #55dbe5);
     position: sticky; }
     header .navbar navbar-expand-lg navbar-light bg-light-nav .container-fluid {
-      background: linear-gradient(to right, #fff 30%, #55dbe5);
       padding: 0; }
 
 .logo_index {
@@ -697,7 +697,7 @@ header {
   margin-left: 10px; }
 
 .nav-item {
-  padding-left: 1.8rem;
+  padding-left: 1.5rem;
   padding-right: 1.5rem; }
 
 .nav-item:hover {
@@ -730,8 +730,8 @@ header {
 
 /*  fin encabezado*/
 footer .footer {
-  background: #76e2e1;
-  background: linear-gradient(90deg, #76e2e1 0%, #f2f5f5 52%, #f1eff0 57%, #76e2e1 94%);
+  background: white;
+  background: linear-gradient(90deg, white 10%, #6eb5c0 54%);
   margin-bottom: 0; }
   footer .footer .redes_footer_index {
     display: inline-block;

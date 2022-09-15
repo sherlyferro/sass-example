@@ -17,7 +17,8 @@ $color: brown;
 
 header {
     overflow: hidden;
-    background: linear-gradient(to right, #fff 30%, #55dbe5);
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 23%, #12ebe8 45%, #3836dd 87%);
     top: 0;
     width: 100%;
     z-index: 100%;
@@ -32,7 +33,7 @@ header {
         position: sticky;
 
         .container-fluid {
-            background: linear-gradient(to right, #fff 30%, #55dbe5);
+         
             padding: 0;
         }
     }
@@ -46,10 +47,8 @@ header {
 }
 
 .nav-item {
-    padding-left: 1.8rem;
+    padding-left: 1.5rem;
     padding-right: 1.5rem;
-
-
 
 }
 
@@ -95,8 +94,8 @@ header {
 footer {
 
     .footer {
-        background: #76e2e1;
-        background: linear-gradient(90deg, rgba(118, 226, 225, 1) 0%, rgba(242, 245, 245, 1) 52%, rgba(241, 239, 240, 1) 57%, rgba(118, 226, 225, 1) 94%);
+        background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(110,181,192,1) 54%);
         margin-bottom: 0;
 
         .redes_footer_index {
