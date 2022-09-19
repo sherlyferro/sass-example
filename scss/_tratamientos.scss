@@ -6,14 +6,18 @@
     display: grid;
     place-items: center;
     background: linear-gradient(rgb(252, 252, 255), rgb(91, 178, 198));
-
+    .frase_tratamientos{
+        font-size: 30px;
+        color: #a52a2a;
+        text-align: center;
+    }
 
     iframe {
         width: 90%;
         height: 500px;
-
+       
     }
-
+    
     .button_tratamientos {
         cursor: pointer;
         width: 250px;
@@ -38,6 +42,7 @@
         background: linear-gradient(90deg, rgba(187, 246, 232, 1) 26%, rgba(196, 248, 251, 1) 45%, rgba(187, 246, 232, 1) 65%);
         border: 1px solid rgb(244, 248, 248);
     }
+   
 
 }
 
@@ -78,7 +83,7 @@
 
         .titulo_tratamiento {
             font-size: 20px;
-            color: brown;
+            color: #a52a2a;
             margin-top: 10px;
         }
 
@@ -139,7 +144,10 @@
         justify-content: center;
         place-items: center;
         background: linear-gradient(rgb(252, 252, 255), rgb(91, 178, 198));
-
+        .frase_tratamientos{
+            font-size: 15px;
+            color: #a52a2a;
+        }
         iframe {
             width: 100%;
             height: 600px;
