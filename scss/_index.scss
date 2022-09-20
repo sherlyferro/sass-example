@@ -26,7 +26,7 @@
             margin-bottom: 30px;
 
             .titulo_slider {
-                color: #a52a2a;
+                color: #f96102;
                 font-size: 75px;
                 animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
             }
@@ -44,7 +44,7 @@
 
 /* farjetas*/
 .card {
-    background-color: #a0dceb80;
+    background-color: #090000;
     margin: 20px;
     padding: 5px;
     width: 100%;
@@ -54,24 +54,26 @@
     
 
     .img_card {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
         margin: 0px;
         padding: auto;
+        border-radius: 10px;
     }
 
     .titulos_index {
         font-size: 25px;
-        color: #a52a2a;
+        color: #21fff4;
         text-align: center;
         margin-top: 5px;
 
     }
 
     .descripcion_index {
-        color: #000;
-        font-size: 22px;
-        margin: 5px;
+        color: #ffffff;
+        font-size: 18px;
+        margin: 5px; 
+        text-align: center;
     }
 }
 
@@ -96,7 +98,7 @@
 
 /* area grid*/
 .content-container {
-    background: radial-gradient(#fff 30%, #318f96);
+    background-color: #000;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
