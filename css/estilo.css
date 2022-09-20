@@ -212,9 +212,9 @@
     border: 1px solid #f8f4c7;
     text-align: center;
     font-size: 20px;
-    background: #55dbe5;
-    background: linear-gradient(90deg, #57dbe5 16%, #d0fafa 45%, #55dbe5 78%);
-    color: #0d0007;
+    background-color: #f9f7f7;
+    color: #000e0e;
+    box-shadow: 0px 0px 10px 10px #f8f4c7;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
     box-shadow: 0px 0px 10px 10px #f8f4c7; }
@@ -222,7 +222,8 @@
     color: #040429;
     background: #bbf6e8;
     background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
-    border: 1px solid #f4f8f8; }
+    border: 1px solid #f4f8f8;
+    box-shadow: 0px 0px 10px 10px #bbf6e8; }
   .row .card-nosotros {
     text-align: center;
     background-color: #8ceafd;
@@ -287,7 +288,7 @@
 /* main de pacientes*/
 .blaqueamiento {
   text-align: center;
-  color: #050002; }
+  color: #2df5f5; }
   .blaqueamiento .bg-pan-bottom {
     animation: bg-pan-bottom 8s both; }
   .blaqueamiento .img_blaqueamiento {
@@ -295,7 +296,8 @@
     height: 600px;
     border-radius: 5px;
     margin-left: 15px;
-    object-fit: cover; }
+    object-fit: cover;
+    margin-bottom: 15px; }
   .blaqueamiento .descripcion_pacientes {
     margin-top: 10px;
     margin: 20px; }
@@ -305,14 +307,14 @@
   cursor: pointer;
   width: 250px;
   height: 40px;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 20px;
   border: 1px solid #86effb;
   text-align: center;
   font-size: 20px;
-  background: #55dbe5;
-  background: linear-gradient(90deg, #55dbe5 16%, #d0fafa 45%, #55dbe5 78%);
-  color: #0a0003;
+  background-color: #f9f7f7;
+  color: #034e4e;
+  box-shadow: 0px 0px 10px 10px #f8f4c7;
   font-family: 'Montserrat', sans-serif;
   margin-left: 30px;
   animation: blink-1 .6s both; }
@@ -321,7 +323,8 @@
   color: #040429;
   background: #bbf6e8;
   background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
-  border: 1px solid #f4f8f8; }
+  border: 1px solid #f4f8f8;
+  box-shadow: 0px 0px 10px 10px #bbf6e8; }
 
 /* grid pacientes*/
 .container-pacientes {
@@ -330,31 +333,33 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 15px 15px;
-  background-color: #E1FFEE;
+  background-color: #000703;
   grid-auto-flow: row;
   grid-template-areas: "blaqueamiento blaqueamiento span1 span2" "blaqueamiento blaqueamiento span3 span4"; }
   .container-pacientes .span1,
   .container-pacientes .span2,
   .container-pacientes .span3,
   .container-pacientes .span4 {
-    background-color: #E1FFEE;
+    background-color: #000d06;
     text-align: center;
     height: 380px; }
     .container-pacientes .span1 .tex_pacientes,
     .container-pacientes .span2 .tex_pacientes,
     .container-pacientes .span3 .tex_pacientes,
     .container-pacientes .span4 .tex_pacientes {
-      color: #0f0105; }
+      color: #36d9fa;
+      font-size: 20px; }
     .container-pacientes .span1 .img_pacientes,
     .container-pacientes .span2 .img_pacientes,
     .container-pacientes .span3 .img_pacientes,
     .container-pacientes .span4 .img_pacientes {
       width: 300px;
       height: 300px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      margin-top: 5px; }
   .container-pacientes .blaqueamiento {
     grid-area: blaqueamiento;
-    background-color: #E1FFEE; }
+    background-color: #000703; }
   .container-pacientes .span1 {
     grid-area: span1; }
   .container-pacientes .span2 {
@@ -364,7 +369,8 @@
   .container-pacientes .span4 {
     grid-area: span4; }
   .container-pacientes .img_pacientes:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    opacity: 0.3 #12f6fe; }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   .button_pacientes {
@@ -409,9 +415,9 @@
     border: 1px solid #86effb;
     text-align: center;
     font-size: 20px;
-    background: #55dbe5;
-    background: linear-gradient(90deg, #55dbe5 16%, #d0fafa 45%, #55dbe5 78%);
-    color: #080002;
+    background-color: #f9f7f7;
+    color: #034e4e;
+    box-shadow: 0px 0px 10px 10px #f8f4c7;
     font-family: 'Montserrat', sans-serif;
     margin-left: 30px;
     margin-bottom: 25px;
@@ -421,7 +427,8 @@
     color: #040429;
     background: #bbf6e8;
     background: linear-gradient(90deg, #bbf6e8 26%, #c4f8fb 45%, #bbf6e8 65%);
-    border: 1px solid #f4f8f8; }
+    border: 1px solid #f4f8f8;
+    box-shadow: 0px 0px 10px 10px #bbf6e8; }
 
 /* grid tatamiento*/
 .container-tratamiento {
@@ -429,6 +436,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10px 10px;
+  background: #080002;
   grid-auto-flow: row;
   grid-template-areas: "video_tratamiento video_tratamiento" "video_tratamiento video_tratamiento" "span1_tratamiento span2_tratamiento" "span3_tratamiento span4_tratamiento"; }
   .container-tratamiento .video_tratamiento {
@@ -444,7 +452,7 @@
     border-radius: 2px;
     width: 90%;
     height: 182px;
-    background-color: #93daeb;
+    background-color: #000506;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5px; }
@@ -453,13 +461,13 @@
     .container-tratamiento .span3_tratamiento .titulo_tratamiento,
     .container-tratamiento .span4_tratamiento .titulo_tratamiento {
       font-size: 20px;
-      color: #a52a2a;
+      color: #bbf6e8;
       margin-top: 10px; }
     .container-tratamiento .span1_tratamiento .descripcion_tratamiento,
     .container-tratamiento .span2_tratamiento .descripcion_tratamiento,
     .container-tratamiento .span3_tratamiento .descripcion_tratamiento,
     .container-tratamiento .span4_tratamiento .descripcion_tratamiento {
-      color: #070000;
+      color: #fefcfc;
       margin: 5px; }
     .container-tratamiento .span1_tratamiento .img_tratamiento,
     .container-tratamiento .span2_tratamiento .img_tratamiento,
@@ -469,19 +477,23 @@
       height: 180px;
       object-fit: cover; }
   .container-tratamiento .span1_tratamiento:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px #bbf6e8; }
   .container-tratamiento .span2_tratamiento {
     grid-area: span2_tratamiento; }
   .container-tratamiento .span2_tratamiento:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px #bbf6e8; }
   .container-tratamiento .span3_tratamiento {
     grid-area: span3_tratamiento; }
   .container-tratamiento .span3_tratamiento:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px #bbf6e8; }
   .container-tratamiento .span4_tratamiento {
     grid-area: span4_tratamiento; }
   .container-tratamiento .span4_tratamiento:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px #bbf6e8; }
 
 /* queries tratamientos*/
 @media only screen and (min-width: 320px) and (max-width: 520px) {
@@ -550,7 +562,8 @@
 /* carrucel sedes*/
 .container-fluid {
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  width: 100%; }
   .container-fluid .carousel-caption {
     position: absolute;
     bottom: 1.25rem;
@@ -578,17 +591,18 @@
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  gap: 10px 10px; }
+  gap: 20px 20px;
+  background-color: #000; }
   .content_sedes .one_sedes,
   .content_sedes .two_sedes,
   .content_sedes .three_sedes {
-    background: radial-gradient(#fff 50%, #b6f9f7);
+    background-color: #000;
     border-radius: 5px;
     border: 1px solid #236e75;
     width: 100%;
     height: 150px;
     margin: 10px;
-    padding: 10px; }
+    padding: 15px; }
     .content_sedes .one_sedes .titulos_sedes,
     .content_sedes .two_sedes .titulos_sedes,
     .content_sedes .three_sedes .titulos_sedes {
@@ -598,14 +612,14 @@
     .content_sedes .two_sedes .descripcion_sedes,
     .content_sedes .three_sedes .descripcion_sedes {
       font-size: 15px;
-      color: #000005;
+      color: #f7f7f9;
       margin-top: 15px; }
 
 /* hover */
 .one_sedes:hover,
 .two_sedes:hover,
 .three_sedes:hover {
-  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 10px #bbf6e8;
   border: 1px solid #236e75; }
 
 /* aplicando mixin */
