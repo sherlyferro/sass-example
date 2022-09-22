@@ -7,42 +7,7 @@
 
 }
 
-/* carrucel sedes*/
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
 
-    .carousel-caption {
-        position: absolute;
-        bottom: 1.25rem;
-        left: 15%;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 30px;
-
-        .titulo_slider {
-            color: #a52a2a;
-            font-size: 40px;
-            animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
-        }
-
-        .titulos_index {
-            font-size: 30px;
-            color: #a52a2a;
-        }
-
-        .descripcion_index {
-            color: #000;
-            font-size: 25px;
-            font-family: random($limit: 1);
-        }
-    }
-
-
-}
 
 /* tarjetas sedes*/
 .content_sedes {
@@ -67,9 +32,9 @@
 
 
         .titulos_sedes {
-            color: #a52a2a;
+            color: #f96102;
             font-size: 22px;
-
+           text-align: center;
         }
 
         .descripcion_sedes {

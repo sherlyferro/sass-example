@@ -9,7 +9,7 @@
 
     .frase_tratamientos {
         font-size: 30px;
-        color: #a52a2a;
+        color: #441b01;
         text-align: center;
     }
 
@@ -24,11 +24,11 @@
         width: 250px;
         height: 40px;
         border-radius: 20px;
-        border: 1px solid rgb(134, 239, 251);
+        border: 1px solid rgb(251, 252, 252);
         text-align: center;
         font-size: 20px;
         background-color: rgb(249, 247, 247);
-        color: #034e4e;
+        color: #f96102;
         box-shadow: 0px 0px 10px 10px#f8f4c7;
         font-family: 'Montserrat', sans-serif;
         margin-left: 30px;
@@ -53,10 +53,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    
     gap: 10px 10px;
     background: #080002;
     grid-auto-flow: row;
     grid-template-areas:
+
         "video_tratamiento video_tratamiento"
         "video_tratamiento video_tratamiento"
         "span1_tratamiento span2_tratamiento"
@@ -77,12 +79,12 @@
         flex-direction: row;
         border-radius: 2px;
         width: 90%;
-        height: 182px;
+        height: 180px;
         background-color: #000506;
         text-align: center;
         margin: 0 auto;
-        
-        margin-bottom: 5px;
+        margin-top: 25px;
+        margin-bottom: 4px;
 
         .titulo_tratamiento {
             font-size: 20px;
@@ -92,10 +94,11 @@
 
         .descripcion_tratamiento {
             color: #fefcfc;
-            margin: 5px;
+            margin: 10px;
         }
 
         .img_tratamiento {
+           
             width: 180px;
             height: 180px;
             object-fit: cover;
@@ -105,7 +108,7 @@
 
     .span1_tratamiento:hover {
         transform: scale(1.1);
-        box-shadow: 0px 0px 10px 10px#bbf6e8;
+        box-shadow: 0px 0px 7px 7px#bbf6e8;
     }
 
     .span2_tratamiento {
@@ -115,7 +118,7 @@
 
     .span2_tratamiento:hover {
         transform: scale(1.1);
-        box-shadow: 0px 0px 10px 10px#bbf6e8;
+        box-shadow: 0px 0px 7px 7px#bbf6e8;
     }
 
     .span3_tratamiento {
@@ -126,7 +129,7 @@
 
     .span3_tratamiento:hover {
         transform: scale(1.1);
-        box-shadow: 0px 0px 10px 10px#bbf6e8;
+        box-shadow: 0px 0px 7px 7px#bbf6e8;
     }
 
     .span4_tratamiento {
@@ -136,7 +139,7 @@
 
     .span4_tratamiento:hover {
         transform: scale(1.1);
-        box-shadow: 0px 0px 10px 10px#bbf6e8;
+        box-shadow: 0px 0px 7px 7px#bbf6e8;
     }
 
 }
@@ -154,7 +157,7 @@
 
         .frase_tratamientos {
             font-size: 15px;
-            color: #a52a2a;
+            color: #050200;
         }
 
         iframe {

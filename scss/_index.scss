@@ -29,12 +29,14 @@
                 color: #f96102;
                 font-size: 75px;
                 animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+
             }
 
             .descripcion_index {
-                color: #000;
+                color: #110601;
                 font-size: 30px;
-                font-family: random($limit: 1);
+                font-family: monospace;
+                text-shadow: 4px 4px 4px  #87dbb7;
             }
         }
     }
@@ -68,7 +70,9 @@
         margin-top: 5px;
 
     }
-
+    .titulos_index:hover{
+        color: #f96102;
+    }
     .descripcion_index {
         color: #ffffff;
         font-size: 18px;
@@ -80,13 +84,9 @@
 /* hover */
 .card:hover {
     transform: scale(1.1);
-  
-
-
-
-
-}
-
+    
+    
+    }
 /* aplicando mixin */
 @mixin tamanos($ancho, $alto) {
     width: $ancho;
