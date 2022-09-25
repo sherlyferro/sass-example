@@ -146,8 +146,10 @@
 @media only screen and (min-width: 320px) and (max-width: 520px) {
     .container-fluid {
         .carousel-inner {
+            height: 320px;
+
             .slider_index {
-                height: 500px;
+                height: 320px;
                 width: 100%;
                 object-fit: cover;
             }
@@ -157,9 +159,10 @@
                 text-align: center;
 
                 .titulo_slider {
+                    padding-top: 1rem;
+                    font-size: 35px;
+                    color: #f80a06;
 
-                    font-size: 65px;
-                    color: #ff6721;
                     animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
                 }
 
@@ -168,7 +171,7 @@
                 }
 
                 .descripcion_index {
-
+                    color: #02024f;
                     font-size: 25px;
                     font-family: random($limit: 1);
 
@@ -176,9 +179,7 @@
 
                 .button_index {
                     font-size: 19px;
-
-
-                    margin-top: 10px;
+                    margin-bottom: 05px;
 
                 }
 
@@ -221,8 +222,6 @@
                 width: 90%;
                 height: 165px;
                 margin-left: 10px;
-
-                transform: scale(1.1);
 
                 .titulos_index {
                     font-size: 30px;

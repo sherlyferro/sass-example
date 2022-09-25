@@ -90,25 +90,28 @@
 /* queries index */
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   .container-fluid .carousel-inner {
+    height: 320px;
     /* carrucel */ }
     .container-fluid .carousel-inner .slider_index {
-      height: 500px;
+      height: 320px;
       width: 100%;
       object-fit: cover; }
     .container-fluid .carousel-inner .carousel-caption {
       text-align: center; }
       .container-fluid .carousel-inner .carousel-caption .titulo_slider {
-        font-size: 65px;
-        color: #ff6721;
+        padding-top: 1rem;
+        font-size: 35px;
+        color: #f80a06;
         animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
       .container-fluid .carousel-inner .carousel-caption .titulos_index {
         font-size: 15px; }
       .container-fluid .carousel-inner .carousel-caption .descripcion_index {
+        color: #02024f;
         font-size: 25px;
         font-family: 1; }
       .container-fluid .carousel-inner .carousel-caption .button_index {
         font-size: 19px;
-        margin-top: 10px; }
+        margin-bottom: 05px; }
       .container-fluid .carousel-inner .carousel-caption .button_index:hover {
         color: #040429;
         background: #bbf6e8;
@@ -131,8 +134,7 @@
       .content-container .one .card {
         width: 90%;
         height: 165px;
-        margin-left: 10px;
-        transform: scale(1.1); }
+        margin-left: 10px; }
         .content-container .one .card .titulos_index {
           font-size: 30px; }
         .content-container .one .card .descripcion_index {
@@ -258,24 +260,27 @@
   border: 1px solid #236e75; }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
-  .row .imagen_nosotros {
-    height: 450px;
-    width: 100%;
-    object-fit: cover; }
-  .row .staff_nosotros {
-    font-size: 30px;
-    text-align: center;
-    color: #39f9f9; }
-  .row .card-nosotros {
-    text-align: center;
-    background-color: #1ec3c3;
-    height: 580px;
-    border-radius: 5px;
-    font-size: 15px; }
-    .row .card-nosotros .card-img-top {
+  .row {
+    margin: 0; }
+    .row .imagen_nosotros {
+      height: 320px;
+      width: 100%;
+      padding: 0;
       object-fit: cover; }
-  .row .card-nosotros:hover {
-    transform: scale(1); } }
+    .row .staff_nosotros {
+      font-size: 30px;
+      text-align: center;
+      color: #39f9f9; }
+    .row .card-nosotros {
+      text-align: center;
+      background-color: #1ec3c3;
+      height: 600px;
+      border-radius: 5px;
+      font-size: 15px; }
+      .row .card-nosotros .card-img-top {
+        height: 400px; }
+    .row .card-nosotros:hover {
+      transform: scale(1); } }
 
 /* main de pacientes*/
 .blaqueamiento {
@@ -384,9 +389,7 @@
       .container-pacientes .blaqueamiento .img_blaqueamiento {
         margin-left: 0px; }
       .container-pacientes .blaqueamiento .img_pacientes:hover {
-        width: 200px;
-        height: 200px;
-        transform: scale(1); } }
+        transform: none; } }
 
 /* main tratamiento*/
 .video_tratamiento {
@@ -607,9 +610,9 @@
 
 /* queries index */
 @media only screen and (min-width: 320px) and (max-width: 520px) {
-  .slider_index {
-    height: 600px;
-    width: 100%; }
+  .slider_sedes {
+    width: 100%;
+    height: 320px; }
   /* carrucel */
   .carousel-caption .titulo_slider {
     font-size: 35px;

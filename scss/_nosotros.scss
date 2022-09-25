@@ -83,10 +83,11 @@
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
     .row {
-
+        margin: 0;
         .imagen_nosotros {
-            height: 450px;
+            height: 320px;
             width: 100%;
+            padding: 0;
             object-fit: cover;
 
         }
@@ -101,12 +102,13 @@
         .card-nosotros {
             text-align: center;
             background-color: #1ec3c3;
-            height: 580px;
+            height: 600px;
             border-radius: 5px;
             font-size: 15px;
 
             .card-img-top {
-                object-fit: cover;
+               
+                height: 400px;
             }
 
         }

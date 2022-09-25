@@ -154,15 +154,15 @@
         .blaqueamiento {
             grid-area: blaqueamiento;
             width: 320px;
+            
 
             .img_blaqueamiento {
                 margin-left: 0px;
             }
 
             .img_pacientes:hover {
-                width: 200px;
-                height: 200px;
-                transform: scale(1.0);
+                
+                transform: none;
             }
         }
     }
