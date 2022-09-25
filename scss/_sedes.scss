@@ -3,11 +3,7 @@
     height: 750px;
     width: 100%;
     object-fit: cover;
-
-
 }
-
-
 
 /* tarjetas sedes*/
 .content_sedes {
@@ -17,7 +13,7 @@
     align-items: center;
     gap: 20px 20px;
     background-color: #000;
-    
+
 
     .one_sedes,
     .two_sedes,
@@ -28,13 +24,15 @@
         width: 100%;
         height: 150px;
         margin: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         padding: 15px;
 
 
         .titulos_sedes {
             color: #f96102;
             font-size: 22px;
-           text-align: center;
+            text-align: center;
         }
 
         .descripcion_sedes {
@@ -94,7 +92,7 @@
 
         .descripcion_index {
 
-            font-size: 25px;
+            font-size: 20px;
             font-family: random($limit: 1);
         }
 
@@ -107,14 +105,7 @@
 
         }
 
-        .button_index:hover {
 
-            color: rgb(4, 4, 41);
-            background: rgb(85, 219, 229);
-            background: rgb(242, 19, 242);
-            background: linear-gradient(270deg, rgba(242, 19, 242, 1) 1%, rgba(229, 85, 187, 1) 51%, rgba(194, 124, 219, 1) 94%);
-            border: 1px solid rgb(247, 7, 203);
-        }
     }
 
     .nav-item:hover {
@@ -132,29 +123,30 @@
         gap: 10px 10px;
         text-align: center;
 
+
         .one_sedes,
         .two_Sedes,
         .three_sedes {
-            background: radial-gradient(#fff 50%, #b6f9f7);
+            background-color: #000;
             border-radius: 5px;
             border: 1px solid rgb(35, 110, 117);
             width: 100%;
             height: 100%;
-            margin: 10px;
+            margin-bottom: 20px;
             padding: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
+
+            color: #fff;
 
 
             .titulos_sedes {
-                color: #a52a2a;
+                color: #f96102;
                 font-size: 20px;
 
             }
 
             .descripcion_sedes {
                 font-size: 15px;
-                color: rgb(0, 0, 5);
+                color: rgb(249, 249, 252);
                 margin-top: 15px;
             }
         }

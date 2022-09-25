@@ -44,6 +44,7 @@ header {
     width: 70px;
     height: 70px;
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 .nav-item {
@@ -56,9 +57,9 @@ header {
 .nav-item:hover {
     transform: scale(1.1);
     border-bottom: 2px solid #FFF;
-   
-    
-   
+
+
+
 }
 
 /* boton de rserva cita*/
@@ -149,7 +150,7 @@ footer {
 
 .redes_footer_index:hover {
     border-radius: 5px;
-    background-color: rgba(235, 247, 246, 0.5); 
+    background-color: rgba(235, 247, 246, 0.5);
 }
 
 /* propiedad each */

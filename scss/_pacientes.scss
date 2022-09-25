@@ -131,7 +131,8 @@
 @media only screen and (min-width: 320px) and (max-width: 520px) {
     .button_pacientes {
 
-        font-size: 14px;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
     /* queries pacientes*/
@@ -161,6 +162,7 @@
             .img_pacientes:hover {
                 width: 200px;
                 height: 200px;
+                transform: scale(1.0);
             }
         }
     }

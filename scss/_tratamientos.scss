@@ -33,7 +33,7 @@
         font-family: 'Montserrat', sans-serif;
         margin-left: 30px;
         margin-bottom: 25px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 40px;
     }
 
@@ -53,7 +53,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
+
     gap: 10px 10px;
     background: #080002;
     grid-auto-flow: row;
@@ -98,7 +98,7 @@
         }
 
         .img_tratamiento {
-           
+
             width: 180px;
             height: 180px;
             object-fit: cover;
@@ -156,7 +156,7 @@
         background: linear-gradient(rgb(252, 252, 255), rgb(91, 178, 198));
 
         .frase_tratamientos {
-            font-size: 15px;
+            font-size: 20px;
             color: #050200;
         }
 
@@ -195,7 +195,7 @@
         .span3_tratamiento,
         .span4_tratamiento {
             grid-area: span1_tratamiento;
-            margin-bottom: 2px;
+            margin-bottom: 30px;
             margin-top: 5px;
             display: flex;
             flex-direction: column;
@@ -215,6 +215,12 @@
             }
         }
 
+        .span1_tratamiento:hover,
+        .span2_tratamiento:hover,
+        .span3_tratamiento:hover,
+        .span4_tratamiento:hover {
+            transform: scale(1.0);
+        }
 
         .span2_tratamiento {
             grid-area: span2_tratamiento;
