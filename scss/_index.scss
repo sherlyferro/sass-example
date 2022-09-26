@@ -10,7 +10,7 @@
 
     .carousel-inner {
         .slider_index {
-            height: 750px;
+            height: 800px;
             width: 100%;
 
         }
@@ -71,9 +71,7 @@
 
     }
 
-    .titulos_index:hover {
-        color: #f96102;
-    }
+    
 
     .descripcion_index {
         color: #ffffff;
@@ -84,11 +82,7 @@
 }
 
 /* hover */
-.card:hover {
-    transform: scale(1.1);
 
-
-}
 
 /* aplicando mixin */
 @mixin tamanos($ancho, $alto) {

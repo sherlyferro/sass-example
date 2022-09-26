@@ -16,7 +16,10 @@
         margin-left: 15px;
         object-fit: cover;
         margin-bottom: 15px;
-
+        opacity: 0.5;
+    }
+    .img_blaqueamiento:hover{
+        opacity: 1;
     }
 
     .descripcion_pacientes {
@@ -85,7 +88,7 @@
             height: 300px;
             border-radius: 5px;
             margin-top: 5px;
-
+            opacity: 0.5;
 
         }
     }
@@ -122,9 +125,8 @@
     }
 
     .img_pacientes:hover {
-        transform: scale(1.1);
-        opacity: .3 rgb(18, 246, 254);
-
+        
+        opacity: 1;
     }
 }
 
@@ -154,14 +156,13 @@
         .blaqueamiento {
             grid-area: blaqueamiento;
             width: 320px;
-            
+
 
             .img_blaqueamiento {
                 margin-left: 0px;
             }
 
             .img_pacientes:hover {
-                
                 transform: none;
             }
         }
