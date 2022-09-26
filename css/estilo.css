@@ -605,7 +605,7 @@
   width: 90%;
   height: 150px; }
 
-/* queries index */
+/* queries sedes */
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   .slider_sedes {
     width: 100%;
@@ -633,7 +633,7 @@
     gap: 10px 10px;
     text-align: center; }
     .content_sedes .one_sedes,
-    .content_sedes .two_Sedes,
+    .content_sedes .two_sedes,
     .content_sedes .three_sedes {
       background-color: #000;
       border-radius: 5px;
@@ -641,14 +641,15 @@
       height: 100%;
       margin-bottom: 20px;
       padding: 10px;
-      color: #fff; }
+      color: #fff;
+      border: 1px solid #000405; }
       .content_sedes .one_sedes .titulos_sedes,
-      .content_sedes .two_Sedes .titulos_sedes,
+      .content_sedes .two_sedes .titulos_sedes,
       .content_sedes .three_sedes .titulos_sedes {
         color: #f96102;
         font-size: 20px; }
       .content_sedes .one_sedes .descripcion_sedes,
-      .content_sedes .two_Sedes .descripcion_sedes,
+      .content_sedes .two_sedes .descripcion_sedes,
       .content_sedes .three_sedes .descripcion_sedes {
         font-size: 15px;
         color: #f9f9fc;

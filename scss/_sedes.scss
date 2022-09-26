@@ -69,7 +69,7 @@
 
 
 
-/* queries index */
+/* queries sedes */
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
 
@@ -107,7 +107,7 @@
 
 
     }
-    
+
     /* grid para mobile */
     .content_sedes {
         display: flex;
@@ -119,7 +119,7 @@
 
 
         .one_sedes,
-        .two_Sedes,
+        .two_sedes,
         .three_sedes {
             background-color: #000;
             border-radius: 5px;
@@ -128,6 +128,7 @@
             margin-bottom: 20px;
             padding: 10px;
             color: #fff;
+            border: 1px solid rgb(0, 4, 5);
 
             .titulos_sedes {
                 color: #f96102;
