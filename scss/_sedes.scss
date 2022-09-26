@@ -38,7 +38,7 @@
         .descripcion_sedes {
             font-size: 15px;
             color: rgb(247, 247, 249);
-            
+
         }
     }
 
@@ -73,7 +73,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
 
-    .slider_sedes{
+    .slider_sedes {
         width: 100%;
         height: 320px;
     }
@@ -107,13 +107,7 @@
 
 
     }
-
-    .nav-item:hover {
-        transform: scale(1.1);
-        border-bottom: 2px solid (#fff 30%, #318f96);
-
-    }
-
+    
     /* grid para mobile */
     .content_sedes {
         display: flex;
@@ -129,14 +123,11 @@
         .three_sedes {
             background-color: #000;
             border-radius: 5px;
-            border: 1px solid rgb(35, 110, 117);
             width: 100%;
             height: 100%;
             margin-bottom: 20px;
             padding: 10px;
-
             color: #fff;
-
 
             .titulos_sedes {
                 color: #f96102;

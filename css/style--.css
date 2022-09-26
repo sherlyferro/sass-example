@@ -16,6 +16,7 @@ header {
     width: 100%;
     z-index: 100%;
 }
+
 .navbar navbar-expand-lg navbar-light bg-light-nav {
     background: linear-gradient(to right, #fff 30%, #55dbe5);
     position: sticky;
@@ -26,14 +27,17 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
 .logo_index {
     width: 50px;
     height: 50px;
 
 }
+
 .nav-item:hover {
     transform: scale(1.1);
 }
+
 /* area botstrap menu*/
 /* cuerpo de la pagina */
 
@@ -41,6 +45,7 @@ header {
     height: 700px;
     width: 100%;
 }
+
 .carousel-caption {
     position: absolute;
     bottom: 1.25rem;
@@ -51,36 +56,44 @@ header {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .titulo_slider {
     color: #a52a2a;
     font-size: 40px;
 }
+
 .row {
     display: flex;
     justify-content: center;
 }
+
 /* menu de navegacion index */
 /* menu_index */
 .slider {
     text-align: center;
 }
+
 .slider-img {
     width: 100%;
     height: 900px;
 }
+
 .slider-text {
     position: absolute;
     top: 280px;
     left: 280px;
 }
+
 .slider-text {
     color: brown;
     font-size: 20px;
 }
+
 .slider-text>p {
     color: black;
     font-size: 10px;
 }
+
 .slider-text>button {
     font-size: 24px;
     border-radius: 5px;
@@ -100,6 +113,7 @@ header {
     transform: scale(1.1);
     background: radial-gradient(rgb(242, 245, 246), rgb(161, 233, 249));
 }
+
 .titulos_index {
     font-size: 30px;
     color: #a52a2a;
@@ -109,6 +123,7 @@ header {
     color: #000;
     font-size: 15px;
 }
+
 .button_index {
     cursor: pointer;
     width: 250px;
@@ -122,12 +137,14 @@ header {
     font-family: 'Montserrat', sans-serif;
     margin-left: 30px;
 }
+
 .button_index:hover {
     color: rgb(1, 1, 15);
     background: radial-gradient(#72FFFF, #6b1f6b);
     border: 1px solid rgb(8, 0, 7);
     transform: scale(1.1);
 }
+
 /* area grid de index */
 
 .content-container {
@@ -141,6 +158,7 @@ header {
         "one two three"
         "one four five";
 }
+
 .one {
     grid-area: one;
 }
@@ -160,6 +178,7 @@ header {
 .five {
     grid-area: five;
 }
+
 /* pie de pagina  */
 
 ul.footer {
@@ -553,7 +572,7 @@ iframe {
 .container-sedes {
     display: grid;
     grid-template-columns: 2fr 1fr;
-   
+
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -649,7 +668,7 @@ iframe {
     ul.nav>li {
         display: block;
         text-align: left;
-        
+
     }
 
     .nav-linkactive {
@@ -934,4 +953,3 @@ iframe {
     }
 
 }
-
